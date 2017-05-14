@@ -60,8 +60,13 @@ void MainGame::initUI()
 	std::string poem(cstr);
 	for (int i = 0; i < poem.size(); i+=2) {
 		std::string c(poem.substr(i, 2));
-		TTFConfig config("fonts/Marker Felt", 25);
-		auto charactor = Label::createWithTTF(config, c);
+		TTFConfig config("fonts/Marker Felt.ttf", 25);
+		//auto charactor = Label::createWithTTF(config, c);
+		auto charactor = Label::create(c, "Arial", 25);
+		float x = origin.x + visibleSize.width / column * ((i / 2) % column);
+		float y = origin.y + visibleSize.height / row * ((i / 2 / column));
+		charactor->setAnchorPoint(Vec2(0, 0));
+		charactor->setPosition(Vec2(x, y));
 		addChild(charactor);
 	}
 }

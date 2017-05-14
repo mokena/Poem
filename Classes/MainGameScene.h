@@ -8,7 +8,7 @@ class MainGame : public cocos2d::Layer
 {
 private:
 	int row = 4;
-	int column = 7;
+	int column = 5;
 	Vector<Sprite*> charactors;
 
 public:
