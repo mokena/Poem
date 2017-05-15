@@ -56,15 +56,14 @@ void MainGame::initUI()
 	// 3. add your codes below...
 	// add poem charactors
 	auto *chnStrings = Dictionary::createWithContentsOfFile("poem.xml");
-	auto cstr = ((String*)chnStrings->objectForKey("level1"))->getCString();
-	std::string poem(cstr);
-	for (int i = 0; i < poem.size(); i+=2) {
-		std::string c(poem.substr(i, 2));
-		TTFConfig config("fonts/Marker Felt.ttf", 25);
-		//auto charactor = Label::createWithTTF(config, c);
-		auto charactor = Label::create(c, "Arial", 25);
-		float x = origin.x + visibleSize.width / column * ((i / 2) % column);
-		float y = origin.y + visibleSize.height / row * ((i / 2 / column));
+	const char* cstr = ((String*)chnStrings->objectForKey("level1"))->getCString();
+	
+	for (int i = 0; i < strlen(cstr); i+=3) {
+		char dest[5] = {0};
+		char* di = strncpy(dest, cstr+i, 3);
+		auto charactor = Label::create(di, "Arial", 25);
+		float x = origin.x + visibleSize.width / column * ((i / 3) % column);
+		float y = origin.y + visibleSize.height / row * ((i / 3 / column));
 		charactor->setAnchorPoint(Vec2(0, 0));
 		charactor->setPosition(Vec2(x, y));
 		addChild(charactor);
