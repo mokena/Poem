@@ -62,12 +62,21 @@ void MainGame::initUI()
 		char dest[5] = {0};
 		char* di = strncpy(dest, cstr+i, 3);
 		auto charactor = Label::create(di, "Arial", 25);
-		float x = origin.x + visibleSize.width / column * ((i / 3) % column);
+		/*float x = origin.x + visibleSize.width / column * ((i / 3) % column);
 		float y = origin.y + visibleSize.height / row * ((i / 3 / column));
 		charactor->setAnchorPoint(Vec2(0, 0));
-		charactor->setPosition(Vec2(x, y));
+		charactor->setPosition(Vec2(x, y));*/
 		addChild(charactor);
+		oriCharactors.pushBack((Sprite*)charactor);
 	}
+}
+
+/*
+	disturb the original poem charactors
+*/
+void MainGame::disturbCharactors()
+{
+	for()
 }
 
 
