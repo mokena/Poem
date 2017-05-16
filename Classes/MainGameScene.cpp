@@ -26,6 +26,8 @@ bool MainGame::init()
         return false;
     }
     
+	srand(time(0));
+
 	// initial the UI layout
 	initUI();
     
@@ -57,26 +59,36 @@ void MainGame::initUI()
 	// add poem charactors
 	auto *chnStrings = Dictionary::createWithContentsOfFile("poem.xml");
 	const char* cstr = ((String*)chnStrings->objectForKey("level1"))->getCString();
-	
+	originalStr = String::create(cstr);
+	Vector<Sprite*> oriCharactors; //charactors in the right order 
 	for (int i = 0; i < strlen(cstr); i+=3) {
 		char dest[5] = {0};
 		char* di = strncpy(dest, cstr+i, 3);
 		auto charactor = Label::create(di, "Arial", 25);
-		/*float x = origin.x + visibleSize.width / column * ((i / 3) % column);
-		float y = origin.y + visibleSize.height / row * ((i / 3 / column));
-		charactor->setAnchorPoint(Vec2(0, 0));
-		charactor->setPosition(Vec2(x, y));*/
 		addChild(charactor);
 		oriCharactors.pushBack((Sprite*)charactor);
 	}
+	disturbCharactors(oriCharactors);
 }
 
 /*
 	disturb the original poem charactors
 */
-void MainGame::disturbCharactors()
+void MainGame::disturbCharactors(Vector<Sprite*> src)
 {
-	for()
+	int count = src.size();
+	auto visibleSize = Director::getInstance()->getVisibleSize();
+	Vec2 origin = Director::getInstance()->getVisibleOrigin();
+	for (int i = 0; i < count; i++) {
+		int index = CCRANDOM_0_1()*src.size();
+		disCharactors.pushBack(src.at(index));
+		auto charactor = src.at(index);
+		float x = origin.x + visibleSize.width / column * (i % column);
+		float y = origin.y + visibleSize.height / row * (i/ column);
+		charactor->setAnchorPoint(Vec2(0, 0));
+		charactor->setPosition(Vec2(x, y));
+		src.erase(index);
+	}
 }
 
 

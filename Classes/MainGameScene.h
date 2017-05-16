@@ -9,8 +9,9 @@ class MainGame : public cocos2d::Layer
 private:
 	int row = 4;
 	int column = 5;
-	Vector<Sprite*> oriCharactors; //charactors in the right order 
+	
 	Vector<Sprite*> disCharactors; //charactors in the disturbed order
+	String* originalStr;
 
 public:
     static cocos2d::Scene* createScene();
@@ -19,7 +20,7 @@ public:
 
 	void initUI();
 
-	void disturbCharactors();
+	void disturbCharactors(Vector<Sprite*> src);
     
     // a selector callback
     void menuCloseCallback(cocos2d::Ref* pSender);
