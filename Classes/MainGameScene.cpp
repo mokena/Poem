@@ -61,14 +61,25 @@ void MainGame::initUI()
 	const char* cstr = ((String*)chnStrings->objectForKey("level1"))->getCString();
 	originalStr = String::create(cstr);
 	Vector<Sprite*> oriCharactors; //charactors in the right order 
+	auto listener = EventListenerTouchOneByOne::create();
+	listener->onTouchBegan = CC_CALLBACK_2(MainGame::onTouchBeganCharactor, this);
+	auto dispatcher = Director::getInstance()->getEventDispatcher();
+
 	for (int i = 0; i < strlen(cstr); i+=3) {
 		char dest[5] = {0};
 		char* di = strncpy(dest, cstr+i, 3);
 		auto charactor = Label::create(di, "Arial", 25);
 		addChild(charactor);
 		oriCharactors.pushBack((Sprite*)charactor);
+		dispatcher->addEventListenerWithSceneGraphPriority(listener, charactor);
 	}
 	disturbCharactors(oriCharactors);
+}
+
+bool MainGame::onTouchBeganCharactor(Touch * touch, Event * event)
+{
+
+	return false;
 }
 
 /*

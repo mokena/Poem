@@ -20,6 +20,8 @@ public:
 
 	void initUI();
 
+	bool onTouchBeganCharactor(Touch* touch, Event* event);
+
 	void disturbCharactors(Vector<Sprite*> src);
     
     // a selector callback
