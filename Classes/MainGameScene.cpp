@@ -27,6 +27,7 @@ bool MainGame::init()
     }
     
 	srand(time(0));
+	selectedCount = 0;
 
 	// initial the UI layout
 	initUI();
@@ -59,11 +60,12 @@ void MainGame::initUI()
 	// add poem charactors
 	auto *chnStrings = Dictionary::createWithContentsOfFile("poem.xml");
 	const char* cstr = ((String*)chnStrings->objectForKey("level1"))->getCString();
-	originalStr = String::create(cstr);
+	originalStr = StringUtils::format(cstr);
 	Vector<Sprite*> oriCharactors; //charactors in the right order 
 	auto listener = EventListenerTouchOneByOne::create();
 	listener->onTouchBegan = CC_CALLBACK_2(MainGame::onTouchBeganCharactor, this);
 	auto dispatcher = Director::getInstance()->getEventDispatcher();
+	dispatcher->addEventListenerWithSceneGraphPriority(listener, this);
 
 	for (int i = 0; i < strlen(cstr); i+=3) {
 		char dest[5] = {0};
@@ -71,13 +73,36 @@ void MainGame::initUI()
 		auto charactor = Label::create(di, "Arial", 25);
 		addChild(charactor);
 		oriCharactors.pushBack((Sprite*)charactor);
-		dispatcher->addEventListenerWithSceneGraphPriority(listener, charactor);
 	}
 	disturbCharactors(oriCharactors);
 }
 
+/*
+	touch listener of charactors
+*/
 bool MainGame::onTouchBeganCharactor(Touch * touch, Event * event)
 {
+	auto tpos = touch->getLocation();
+
+	for (int i = 0; i < disCharactors.size(); i++) {
+		auto charactor = (Label*)(disCharactors.at(i));
+		auto area = charactor->getBoundingBox();
+		if (area.containsPoint(tpos)) {
+			if (selectedCount < 5) {
+				selectedStr.append(charactor->getString());
+				log("touched character %s", charactor->getString());
+				selectedCount++;
+			}
+			else {
+				bool right = isCorrectPoem(selectedStr, originalStr);
+				log("you picked %s", right);
+				selectedCount = 0;
+				selectedStr.clear();
+			}
+			
+			break;
+		}
+	}
 
 	return false;
 }
@@ -111,4 +136,9 @@ void MainGame::menuCloseCallback(Ref* pSender)
     #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
     exit(0);
 #endif
+}
+
+bool MainGame::isCorrectPoem(std::string pick, std::string src)
+{
+	return false;
 }

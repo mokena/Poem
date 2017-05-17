@@ -11,7 +11,9 @@ private:
 	int column = 5;
 	
 	Vector<Sprite*> disCharactors; //charactors in the disturbed order
-	String* originalStr;
+	std::string originalStr;
+	std::string selectedStr;
+	int selectedCount;
 
 public:
     static cocos2d::Scene* createScene();
@@ -26,6 +28,8 @@ public:
     
     // a selector callback
     void menuCloseCallback(cocos2d::Ref* pSender);
+
+	bool isCorrectPoem(std::string pick, std::string src);
     
     // implement the "static create()" method manually
     CREATE_FUNC(MainGame);
