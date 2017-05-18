@@ -88,14 +88,15 @@ bool MainGame::onTouchBeganCharactor(Touch * touch, Event * event)
 		auto charactor = (Label*)(disCharactors.at(i));
 		auto area = charactor->getBoundingBox();
 		if (area.containsPoint(tpos)) {
-			if (selectedCount < 5) {
+			if (selectedCount < 4) {
 				selectedStr.append(charactor->getString());
 				log("touched character %s", charactor->getString());
 				selectedCount++;
 			}
 			else {
+				selectedStr.append(charactor->getString());
 				bool right = isCorrectPoem(selectedStr, originalStr);
-				log("you picked %s", right);
+				log("you picked %d", right);
 				selectedCount = 0;
 				selectedStr.clear();
 			}
@@ -138,7 +139,15 @@ void MainGame::menuCloseCallback(Ref* pSender)
 #endif
 }
 
+/*
+check the picked charactors is the right poem sentence
+*/
 bool MainGame::isCorrectPoem(std::string pick, std::string src)
 {
+	int index = src.find(pick);
+	if (index == 0 || index == 15 || index == 30 || index == 45) {
+		return true;
+	}
+
 	return false;
 }
