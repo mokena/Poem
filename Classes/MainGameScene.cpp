@@ -41,6 +41,10 @@ void MainGame::initUI()
 	auto visibleSize = Director::getInstance()->getVisibleSize();
 	Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
+	// background
+	auto bg = Sprite::create("bg.png");
+	bg->setAnchorPoint(Vec2(0, 0));
+	addChild(bg);
 	//// add a "close" icon to exit the progress. it's an autorelease object
 	//auto closeItem = MenuItemImage::create(
 	//	"CloseNormal.png",
@@ -55,8 +59,12 @@ void MainGame::initUI()
 	//menu->setPosition(Vec2::ZERO);
 	//this->addChild(menu, 1);
 
-	/////////////////////////////
-	// 3. add your codes below...
+	// charactors area
+	auto charactorsArea = Sprite::create("charactorArea.png");
+	charactorsArea->setAnchorPoint(Vec2(0.5, 0.5));
+	charactorsArea->setPosition(Vec2(visibleSize.width/2, visibleSize.height/3));
+	addChild(charactorsArea);
+
 	// add poem charactors
 	auto *chnStrings = Dictionary::createWithContentsOfFile("poem.xml");
 	const char* cstr = ((String*)chnStrings->objectForKey("level1"))->getCString();
@@ -74,7 +82,9 @@ void MainGame::initUI()
 		addChild(charactor);
 		oriCharactors.pushBack((Sprite*)charactor);
 	}
-	disturbCharactors(oriCharactors);
+	Vec2 chaOrigin  = Vec2(charactorsArea->getPositionX() - charactorsArea->getContentSize().width / 2,
+		charactorsArea->getPositionY() - charactorsArea->getContentSize().height / 2);
+	disturbCharactors(oriCharactors, chaOrigin, charactorsArea->getContentSize());
 }
 
 /*
@@ -111,17 +121,18 @@ bool MainGame::onTouchBeganCharactor(Touch * touch, Event * event)
 /*
 	disturb the original poem charactors
 */
-void MainGame::disturbCharactors(Vector<Sprite*> src)
+void MainGame::disturbCharactors(Vector<Sprite*> src, Vec2 chaOrigin, Size size)
 {
 	int count = src.size();
-	auto visibleSize = Director::getInstance()->getVisibleSize();
-	Vec2 origin = Director::getInstance()->getVisibleOrigin();
+	int perWidth = size.width / column;
+	int perHeight = size.height / row;
+	int gap = 5;
 	for (int i = 0; i < count; i++) {
 		int index = CCRANDOM_0_1()*src.size();
 		disCharactors.pushBack(src.at(index));
 		auto charactor = src.at(index);
-		float x = origin.x + visibleSize.width / column * (i % column);
-		float y = origin.y + visibleSize.height / row * (i/ column);
+		float x = chaOrigin.x + gap + perWidth * (i % column) + perWidth / 2 -  charactor->getContentSize().width / 2;
+		float y = chaOrigin.y + gap + perHeight * (i/ column) + perHeight / 2 - charactor->getContentSize().height / 2;
 		charactor->setAnchorPoint(Vec2(0, 0));
 		charactor->setPosition(Vec2(x, y));
 		src.erase(index);

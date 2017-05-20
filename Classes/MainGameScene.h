@@ -24,7 +24,7 @@ public:
 
 	bool onTouchBeganCharactor(Touch* touch, Event* event);
 
-	void disturbCharactors(Vector<Sprite*> src);
+	void disturbCharactors(Vector<Sprite*> src, Vec2 origin, Size size);
     
     // a selector callback
     void menuCloseCallback(cocos2d::Ref* pSender);
