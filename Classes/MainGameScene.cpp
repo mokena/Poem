@@ -99,7 +99,7 @@ void MainGame::initUI()
 	progressTimer->setPosition(Vec2(visibleSize.width / 2, progressBg->getPositionY()));
 	progressTimer->setMidpoint(Vec2(0, 0));
 	progressTimer->setBarChangeRate(Vec2(1, 0));
-	progressTimer->setPercentage(45.5f);
+	progressTimer->setPercentage(0.0f);
 	addChild(progressTimer);
 }
 
@@ -172,7 +172,24 @@ check the picked charactors is the right poem sentence
 bool MainGame::isCorrectPoem(std::string pick, std::string src)
 {
 	int index = src.find(pick);
-	if (index == 0 || index == 15 || index == 30 || index == 45) {
+	
+	if (index == 0 && correctCount == 0){
+		correctCount++;
+		progressTimer->setPercentage(25.0f);
+		return true;
+	}
+	else if (index == 15 && correctCount == 1) {
+		correctCount++;
+		progressTimer->setPercentage(50.0f);
+		return true;
+	}
+	else if (index == 30 && correctCount == 2) {
+		correctCount++;
+		progressTimer->setPercentage(75.0f);
+		return true;
+	}
+	else if (index == 45 && correctCount == 3) {
+		progressTimer->setPercentage(100.0f);
 		return true;
 	}
 

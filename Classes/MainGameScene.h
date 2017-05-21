@@ -9,6 +9,7 @@ class MainGame : public cocos2d::Layer
 private:
 	int row = 4;
 	int column = 5;
+	int correctCount = 0;
 	
 	Vector<Sprite*> disCharactors; //charactors in the disturbed order
 	std::string originalStr;
