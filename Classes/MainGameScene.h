@@ -14,6 +14,7 @@ private:
 	std::string originalStr;
 	std::string selectedStr;
 	int selectedCount;
+	ProgressTimer* progressTimer;
 
 public:
     static cocos2d::Scene* createScene();

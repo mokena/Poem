@@ -45,6 +45,7 @@ void MainGame::initUI()
 	auto bg = Sprite::create("bg.png");
 	bg->setAnchorPoint(Vec2(0, 0));
 	addChild(bg);
+
 	//// add a "close" icon to exit the progress. it's an autorelease object
 	//auto closeItem = MenuItemImage::create(
 	//	"CloseNormal.png",
@@ -85,6 +86,21 @@ void MainGame::initUI()
 	Vec2 chaOrigin  = Vec2(charactorsArea->getPositionX() - charactorsArea->getContentSize().width / 2,
 		charactorsArea->getPositionY() - charactorsArea->getContentSize().height / 2);
 	disturbCharactors(oriCharactors, chaOrigin, charactorsArea->getContentSize());
+
+	// progress bar
+	auto progressBg = Sprite::create("progressBg.png");
+	progressBg->setPosition(Vec2(visibleSize.width / 2, 
+		charactorsArea->getPositionY() + charactorsArea->getContentSize().height / 2 + charactorsArea->getContentSize().height / 10));
+	addChild(progressBg);
+
+	auto progressBar = Sprite::create("progressBar.png");
+	progressTimer = ProgressTimer::create(progressBar);
+	progressTimer->setType(ProgressTimer::Type::BAR);
+	progressTimer->setPosition(Vec2(visibleSize.width / 2, progressBg->getPositionY()));
+	progressTimer->setMidpoint(Vec2(0, 0));
+	progressTimer->setBarChangeRate(Vec2(1, 0));
+	progressTimer->setPercentage(45.5f);
+	addChild(progressTimer);
 }
 
 /*
