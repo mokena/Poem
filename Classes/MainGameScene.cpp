@@ -70,7 +70,7 @@ void MainGame::initUI()
 	auto *chnStrings = Dictionary::createWithContentsOfFile("poem.xml");
 	const char* cstr = ((String*)chnStrings->objectForKey("level1"))->getCString();
 	originalStr = StringUtils::format(cstr);
-	Vector<Sprite*> oriCharactors; //charactors in the right order 
+	Vector<Charactor*> oriCharactors; //charactors in the right order 
 	auto listener = EventListenerTouchOneByOne::create();
 	listener->onTouchBegan = CC_CALLBACK_2(MainGame::onTouchBeganCharactor, this);
 	auto dispatcher = Director::getInstance()->getEventDispatcher();
@@ -79,9 +79,9 @@ void MainGame::initUI()
 	for (int i = 0; i < strlen(cstr); i+=3) {
 		char dest[5] = {0};
 		char* di = strncpy(dest, cstr+i, 3);
-		auto charactor = Label::create(di, "Arial", 25);
+		auto charactor = Charactor::createWithString(di);//Label::create(di, "Arial", 25);
 		addChild(charactor);
-		oriCharactors.pushBack((Sprite*)charactor);
+		oriCharactors.pushBack(charactor);
 	}
 	Vec2 chaOrigin  = Vec2(charactorsArea->getPositionX() - charactorsArea->getContentSize().width / 2,
 		charactorsArea->getPositionY() - charactorsArea->getContentSize().height / 2);
@@ -111,10 +111,14 @@ bool MainGame::onTouchBeganCharactor(Touch * touch, Event * event)
 	auto tpos = touch->getLocation();
 
 	for (int i = 0; i < disCharactors.size(); i++) {
-		auto charactor = (Label*)(disCharactors.at(i));
+		auto charactor = disCharactors.at(i);
 		auto area = charactor->getBoundingBox();
 		if (area.containsPoint(tpos)) {
-			if (selectedCount < 4) {
+			charactor->setPicked();
+			bool picked = charactor->getPicked();
+			if (!picked) {
+				selectedStr.erase(selectedStr.find_first_of(charactor->getString()), 3);
+			} else if (selectedCount < 4) {
 				selectedStr.append(charactor->getString());
 				log("touched character %s", charactor->getString());
 				selectedCount++;
@@ -137,7 +141,7 @@ bool MainGame::onTouchBeganCharactor(Touch * touch, Event * event)
 /*
 	disturb the original poem charactors
 */
-void MainGame::disturbCharactors(Vector<Sprite*> src, Vec2 chaOrigin, Size size)
+void MainGame::disturbCharactors(Vector<Charactor*> src, Vec2 chaOrigin, Size size)
 {
 	int count = src.size();
 	int perWidth = size.width / column;

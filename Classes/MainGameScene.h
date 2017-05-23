@@ -2,6 +2,7 @@
 #define __MAINGAME_SCENE_H__
 
 #include "cocos2d.h"
+#include "Charactor.h"
 USING_NS_CC;
 
 class MainGame : public cocos2d::Layer
@@ -11,7 +12,7 @@ private:
 	int column = 5;
 	int correctCount = 0;
 	
-	Vector<Sprite*> disCharactors; //charactors in the disturbed order
+	Vector<Charactor*> disCharactors; //charactors in the disturbed order
 	std::string originalStr;
 	std::string selectedStr;
 	int selectedCount;
@@ -26,7 +27,7 @@ public:
 
 	bool onTouchBeganCharactor(Touch* touch, Event* event);
 
-	void disturbCharactors(Vector<Sprite*> src, Vec2 origin, Size size);
+	void disturbCharactors(Vector<Charactor*> src, Vec2 origin, Size size);
     
     // a selector callback
     void menuCloseCallback(cocos2d::Ref* pSender);
