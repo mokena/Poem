@@ -23,13 +23,19 @@ bool Charactor::init()
 
 void Charactor::initWithString(char * text)
 {
-	//auto size = this->getContentSize();
+	// bg
+	auto bg = Sprite::create("charactorBg.png");
+	bg->setAnchorPoint(Vec2(0, 0));
+	addChild(bg);
+	setContentSize(bg->getContentSize());
+
+	// text
 	word = text;
 	label = Label::create(word, "Arial", 25);
-	label->setAnchorPoint(Vec2(0, 0));
-	//label->setPosition(size / 2);
+	label->setAnchorPoint(Vec2(0.5, 0.5));
+	label->setPosition(getContentSize() / 2);
+	label->setTextColor(Color4B::GRAY);
 	addChild(label);
-	setContentSize(label->getContentSize());
 }
 
 bool Charactor::getPicked()
