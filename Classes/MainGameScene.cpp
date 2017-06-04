@@ -46,6 +46,8 @@ void MainGame::initUI()
 	bg->setAnchorPoint(Vec2(0, 0));
 	addChild(bg);
 
+	auto *chnStrings = Dictionary::createWithContentsOfFile("poem.xml");
+
 	//// add a "close" icon to exit the progress. it's an autorelease object
 	//auto closeItem = MenuItemImage::create(
 	//	"CloseNormal.png",
@@ -60,6 +62,22 @@ void MainGame::initUI()
 	//menu->setPosition(Vec2::ZERO);
 	//this->addChild(menu, 1);
 
+	// info area
+	const char* tstr = ((String*)chnStrings->objectForKey("poem1"))->getCString();
+	auto title = Label::create(tstr, "Arial", 40);
+	title->setPosition(Vec2(visibleSize.width / 2, origin.y + visibleSize.height - title->getContentSize().height));
+	addChild(title);
+
+	const char* astr = ((String*)chnStrings->objectForKey("author1"))->getCString();
+	auto author = Label::create(astr, "Arial", 25);
+	author->setPosition(Vec2(visibleSize.width / 4, title->getPositionY() - title->getContentSize().height - author->getContentSize().height));
+	addChild(author);
+
+	const char* dstr = ((String*)chnStrings->objectForKey("dynasty1"))->getCString();
+	auto dynasty = Label::create(dstr, "Arial", 25);
+	dynasty->setPosition(Vec2(visibleSize.width * 3 / 4, title->getPositionY() - title->getContentSize().height - dynasty->getContentSize().height));
+	addChild(dynasty);
+
 	// charactors area
 	auto charactorsArea = Sprite::create("charactorArea.png");
 	charactorsArea->setAnchorPoint(Vec2(0.5, 0.5));
@@ -67,7 +85,6 @@ void MainGame::initUI()
 	addChild(charactorsArea);
 
 	// add poem charactors
-	auto *chnStrings = Dictionary::createWithContentsOfFile("poem.xml");
 	const char* cstr = ((String*)chnStrings->objectForKey("level1"))->getCString();
 	originalStr = StringUtils::format(cstr);
 	Vector<Charactor*> oriCharactors; //charactors in the right order 
