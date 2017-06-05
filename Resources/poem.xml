@@ -1,4 +1,7 @@
 ﻿<dict>  
+		<key>need_note</key>
+		<string>需要提示吗？</string>
+	
 		<key>poem1</key>
 		<string>八阵图</string>
 		<key>author1</key>
@@ -6,5 +9,7 @@
 		<key>dynasty1</key>
 		<string>【朝代】唐</string>
     <key>level1</key>  
-    <string>功盖三分国名成八阵图江流石不转遗恨失吞吴</string>   
+    <string>功盖三分国名成八阵图江流石不转遗恨失吞吴</string>  
+    <key>note1</key> 
+    <string>三国鼎立你建立了盖世功绩，创八阵图你成就了永久声名。江水东流推不转你布阵石头，千古遗恨你灭吴失策功未就。</string>
 </dict>  

@@ -17,6 +17,7 @@ private:
 	std::string selectedStr;
 	int selectedCount;
 	ProgressTimer* progressTimer;
+	Label* noteLbl;
 
 public:
     static cocos2d::Scene* createScene();

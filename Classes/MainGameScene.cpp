@@ -78,6 +78,12 @@ void MainGame::initUI()
 	dynasty->setPosition(Vec2(visibleSize.width * 3 / 4, title->getPositionY() - title->getContentSize().height - dynasty->getContentSize().height));
 	addChild(dynasty);
 
+	// note area
+	const char* notestr = ((String*)chnStrings->objectForKey("need_note"))->getCString();
+	noteLbl = Label::create(notestr, "Arial", 30);
+	noteLbl->setPosition(Vec2(visibleSize.width / 2, dynasty->getPositionY() - dynasty->getContentSize().height - noteLbl->getContentSize().height));
+	addChild(noteLbl);
+
 	// charactors area
 	auto charactorsArea = Sprite::create("charactorArea.png");
 	charactorsArea->setAnchorPoint(Vec2(0.5, 0.5));
