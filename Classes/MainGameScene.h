@@ -12,7 +12,8 @@ private:
 	int column = 5;
 	int correctCount = 0;
 	
-	Vector<Charactor*> disCharactors; //charactors in the disturbed order
+	Vector<Charactor*> disCharactors; // charactors in the disturbed order
+	Vector<Charactor*> selectedCharactors; // selected charactors 
 	std::string originalStr;
 	std::string selectedStr;
 	int selectedCount;

@@ -124,6 +124,7 @@ void MainGame::initUI()
 	progressTimer->setBarChangeRate(Vec2(1, 0));
 	progressTimer->setPercentage(0.0f);
 	addChild(progressTimer);
+
 }
 
 /*
@@ -141,15 +142,29 @@ bool MainGame::onTouchBeganCharactor(Touch * touch, Event * event)
 			bool picked = charactor->getPicked();
 			if (!picked) {
 				selectedStr.erase(selectedStr.find_first_of(charactor->getString()), 3);
+				selectedCharactors.eraseObject(charactor); // delete from the selected charactors
 			} else if (selectedCount < 4) {
 				selectedStr.append(charactor->getString());
+				selectedCharactors.pushBack(charactor);
 				log("touched character %s", charactor->getString());
 				selectedCount++;
 			}
 			else {
 				selectedStr.append(charactor->getString());
+				selectedCharactors.pushBack(charactor);
 				bool right = isCorrectPoem(selectedStr, originalStr);
 				log("you picked %d", right);
+				if (right) {
+					auto iterator = selectedCharactors.begin();
+					while (iterator != selectedCharactors.end()) {
+						((Charactor*)(*iterator))->removeFromParent();
+						iterator++;
+					}
+					CCParticleSystem* particleSystem = CCParticleExplosion::create();
+					//particleSystem->setTexture(CCTextureCache::sharedTextureCache()->addImage("stars.png"));
+					addChild(particleSystem);
+				}
+				selectedCharactors.clear();
 				selectedCount = 0;
 				selectedStr.clear();
 			}
