@@ -46,7 +46,7 @@ void MainGame::initUI()
 	bg->setAnchorPoint(Vec2(0, 0));
 	addChild(bg);
 
-	auto *chnStrings = Dictionary::createWithContentsOfFile("poem.xml");
+	chnStrings = Dictionary::createWithContentsOfFile("poem.xml");
 
 	//// add a "close" icon to exit the progress. it's an autorelease object
 	//auto closeItem = MenuItemImage::create(
@@ -62,54 +62,19 @@ void MainGame::initUI()
 	//menu->setPosition(Vec2::ZERO);
 	//this->addChild(menu, 1);
 
-	// info area
-	const char* tstr = ((String*)chnStrings->objectForKey("poem1"))->getCString();
-	auto title = Label::create(tstr, "Arial", 40);
-	title->setPosition(Vec2(visibleSize.width / 2, origin.y + visibleSize.height - title->getContentSize().height));
-	addChild(title);
-
-	const char* astr = ((String*)chnStrings->objectForKey("author1"))->getCString();
-	auto author = Label::create(astr, "Arial", 25);
-	author->setPosition(Vec2(visibleSize.width / 4, title->getPositionY() - title->getContentSize().height - author->getContentSize().height));
-	addChild(author);
-
-	const char* dstr = ((String*)chnStrings->objectForKey("dynasty1"))->getCString();
-	auto dynasty = Label::create(dstr, "Arial", 25);
-	dynasty->setPosition(Vec2(visibleSize.width * 3 / 4, title->getPositionY() - title->getContentSize().height - dynasty->getContentSize().height));
-	addChild(dynasty);
-
-	// note area
-	const char* notestr = ((String*)chnStrings->objectForKey("need_note"))->getCString();
-	noteLbl = Label::create(notestr, "Arial", 30);
-	noteLbl->setPosition(Vec2(visibleSize.width / 2, dynasty->getPositionY() - dynasty->getContentSize().height - noteLbl->getContentSize().height));
-	addChild(noteLbl);
-
 	// charactors area
-	auto charactorsArea = Sprite::create("charactorArea.png");
+	charactorsArea = Sprite::create("charactorArea.png");
 	charactorsArea->setAnchorPoint(Vec2(0.5, 0.5));
 	charactorsArea->setPosition(Vec2(visibleSize.width/2, visibleSize.height/3));
 	addChild(charactorsArea);
 
-	// add poem charactors
-	const char* cstr = ((String*)chnStrings->objectForKey("level1"))->getCString();
-	originalStr = StringUtils::format(cstr);
-	Vector<Charactor*> oriCharactors; //charactors in the right order 
+	// add touch listener
 	auto listener = EventListenerTouchOneByOne::create();
 	listener->onTouchBegan = CC_CALLBACK_2(MainGame::onTouchBeganCharactor, this);
 	auto dispatcher = Director::getInstance()->getEventDispatcher();
 	dispatcher->addEventListenerWithSceneGraphPriority(listener, this);
 
-	for (int i = 0; i < strlen(cstr); i+=3) {
-		char dest[5] = {0};
-		char* di = strncpy(dest, cstr+i, 3);
-		auto charactor = Charactor::createWithString(di);//Label::create(di, "Arial", 25);
-		addChild(charactor);
-		oriCharactors.pushBack(charactor);
-	}
-	Vec2 chaOrigin  = Vec2(charactorsArea->getPositionX() - charactorsArea->getContentSize().width / 2,
-		charactorsArea->getPositionY() - charactorsArea->getContentSize().height / 2);
-	disturbCharactors(oriCharactors, chaOrigin, charactorsArea->getContentSize());
-
+	
 	// progress bar
 	auto progressBg = Sprite::create("progressBg.png");
 	progressBg->setPosition(Vec2(visibleSize.width / 2, 
@@ -122,9 +87,66 @@ void MainGame::initUI()
 	progressTimer->setPosition(Vec2(visibleSize.width / 2, progressBg->getPositionY()));
 	progressTimer->setMidpoint(Vec2(0, 0));
 	progressTimer->setBarChangeRate(Vec2(1, 0));
-	progressTimer->setPercentage(0.0f);
+	
 	addChild(progressTimer);
 
+	initLevel();
+}
+
+void MainGame::initLevel()
+{
+	progressTimer->setPercentage(0.0f);
+
+	auto visibleSize = Director::getInstance()->getVisibleSize();
+	Vec2 origin = Director::getInstance()->getVisibleOrigin();
+
+	// info area
+	// title
+	std::string ts = StringUtils::format("poem%d", level);
+	const char* titstr = ts.c_str();
+	const char* tstr = ((String*)chnStrings->objectForKey(titstr))->getCString();
+	auto title = Label::create(tstr, "Arial", 40);
+	title->setPosition(Vec2(visibleSize.width / 2, origin.y + visibleSize.height - title->getContentSize().height));
+	addChild(title);
+
+	// author
+	std::string as = StringUtils::format("author%d", level);
+	const char* austr = as.c_str();
+	const char* astr = ((String*)chnStrings->objectForKey(austr))->getCString();
+	auto author = Label::create(astr, "Arial", 25);
+	author->setPosition(Vec2(visibleSize.width / 4, title->getPositionY() - title->getContentSize().height - author->getContentSize().height));
+	addChild(author);
+
+	// dynasty
+	std::string ds = StringUtils::format("dynasty%d", level);
+	const char* dystr = ds.c_str();
+	const char* dstr = ((String*)chnStrings->objectForKey(dystr))->getCString();
+	auto dynasty = Label::create(dstr, "Arial", 25);
+	dynasty->setPosition(Vec2(visibleSize.width * 3 / 4, title->getPositionY() - title->getContentSize().height - dynasty->getContentSize().height));
+	addChild(dynasty);
+
+	// note area
+	const char* notestr = ((String*)chnStrings->objectForKey("need_note"))->getCString();
+	noteLbl = Label::create(notestr, "Arial", 30);
+	noteLbl->setPosition(Vec2(visibleSize.width / 2, dynasty->getPositionY() - dynasty->getContentSize().height - noteLbl->getContentSize().height));
+	addChild(noteLbl);
+
+	std::string levels = StringUtils::format("level%d", level);
+	const char* levelStr = levels.c_str();
+	const char* cstr = ((String*)chnStrings->objectForKey(levelStr))->getCString();
+	originalStr = StringUtils::format(cstr);
+	Vector<Charactor*> oriCharactors; //charactors in the right order 
+
+	for (int i = 0; i < strlen(cstr); i += 3) {
+		char dest[5] = { 0 };
+		char* di = strncpy(dest, cstr + i, 3);
+		auto charactor = Charactor::createWithString(di);//Label::create(di, "Arial", 25);
+		addChild(charactor);
+		oriCharactors.pushBack(charactor);
+	}
+	Vec2 chaOrigin = Vec2(charactorsArea->getPositionX() - charactorsArea->getContentSize().width / 2,
+		charactorsArea->getPositionY() - charactorsArea->getContentSize().height / 2);
+	disturbCharactors(oriCharactors, chaOrigin, charactorsArea->getContentSize());
 }
 
 /*
@@ -140,16 +162,19 @@ bool MainGame::onTouchBeganCharactor(Touch * touch, Event * event)
 		if (area.containsPoint(tpos)) {
 			charactor->setPicked();
 			bool picked = charactor->getPicked();
-			if (!picked) {
+			if (!picked) { // cancel picked charactor
 				selectedStr.erase(selectedStr.find_first_of(charactor->getString()), 3);
 				selectedCharactors.eraseObject(charactor); // delete from the selected charactors
-			} else if (selectedCount < 4) {
+			} else if (selectedCount < 4) { 
+				// picked one charactor but the number of picked charactors 
+				// is smaller than a sentence
 				selectedStr.append(charactor->getString());
 				selectedCharactors.pushBack(charactor);
 				log("touched character %s", charactor->getString());
 				selectedCount++;
 			}
 			else {
+				// picked a whole sentence
 				selectedStr.append(charactor->getString());
 				selectedCharactors.pushBack(charactor);
 				bool right = isCorrectPoem(selectedStr, originalStr);
@@ -167,6 +192,12 @@ bool MainGame::onTouchBeganCharactor(Touch * touch, Event * event)
 				selectedCharactors.clear();
 				selectedCount = 0;
 				selectedStr.clear();
+
+				// if this stage is cleaned
+				if (progressTimer->getPercentage() == 100) {
+					level++;
+					initLevel();
+				}
 			}
 			
 			break;

@@ -12,4 +12,15 @@
     <string>功盖三分国名成八阵图江流石不转遗恨失吞吴</string>  
     <key>note1</key> 
     <string>三国鼎立你建立了盖世功绩，创八阵图你成就了永久声名。江水东流推不转你布阵石头，千古遗恨你灭吴失策功未就。</string>
+    
+    <key>poem2</key>
+		<string>行宫</string>
+		<key>author2</key>
+		<string>【作者】元稹</string>
+		<key>dynasty2</key>
+		<string>【朝代】唐</string>
+    <key>level2</key>  
+    <string>寥落古行宫宫花寂寞红白头宫女在闲坐说玄宗</string>  
+    <key>note2</key> 
+    <string>早已空虚冷寞的古行宫，零落宫花依然开行艳红。有几个满头白发的宫女，闲坐谈论当年的唐玄宗。</string>
 </dict>  

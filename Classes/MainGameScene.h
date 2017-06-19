@@ -19,6 +19,9 @@ private:
 	int selectedCount;
 	ProgressTimer* progressTimer;
 	Label* noteLbl;
+	int level = 1;
+	Sprite* charactorsArea; // charactor area background
+	Dictionary* chnStrings; // string from xml
 
 public:
     static cocos2d::Scene* createScene();
@@ -26,6 +29,8 @@ public:
     virtual bool init();
 
 	void initUI();
+
+	void initLevel();
 
 	bool onTouchBeganCharactor(Touch* touch, Event* event);
 
