@@ -8,20 +8,25 @@ USING_NS_CC;
 class MainGame : public cocos2d::Layer
 {
 private:
-	int row = 4;
-	int column = 5;
-	int correctCount = 0;
+	int row = 4; // charactor rows 
+	int column = 5; // charactor columns
+	int level = 1; // poem level
+	int correctCount = 0; // correct sentences user has selected
+	int selectedCount; // the count of user selected charactor
 	
+	Dictionary* chnStrings; // string from xml
 	Vector<Charactor*> disCharactors; // charactors in the disturbed order
 	Vector<Charactor*> selectedCharactors; // selected charactors 
-	std::string originalStr;
-	std::string selectedStr;
-	int selectedCount;
-	ProgressTimer* progressTimer;
-	Label* noteLbl;
-	int level = 1;
+	std::string originalStr; // the right ordered poem
+	std::string selectedStr; // the user selected sentence
+	
+	ProgressTimer* progressTimer; // progress of the whole poem been selected
+	Label* noteLbl; // hint to user
+	Label* title; // title of the poem
+	Label* author; // author of the poem
+	Label* dynasty; // dynasty of the poem
 	Sprite* charactorsArea; // charactor area background
-	Dictionary* chnStrings; // string from xml
+	
 
 public:
     static cocos2d::Scene* createScene();

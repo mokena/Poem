@@ -1,4 +1,6 @@
 ﻿<dict>  
+	  <key>app</key>
+	  <string>诗飘絮</string>
 		<key>need_note</key>
 		<string>需要提示吗？</string>
 	
@@ -23,4 +25,6 @@
     <string>寥落古行宫宫花寂寞红白头宫女在闲坐说玄宗</string>  
     <key>note2</key> 
     <string>早已空虚冷寞的古行宫，零落宫花依然开行艳红。有几个满头白发的宫女，闲坐谈论当年的唐玄宗。</string>
+    
+    
 </dict>  

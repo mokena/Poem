@@ -46,8 +46,6 @@ void MainGame::initUI()
 	bg->setAnchorPoint(Vec2(0, 0));
 	addChild(bg);
 
-	chnStrings = Dictionary::createWithContentsOfFile("poem.xml");
-
 	//// add a "close" icon to exit the progress. it's an autorelease object
 	//auto closeItem = MenuItemImage::create(
 	//	"CloseNormal.png",
@@ -67,6 +65,30 @@ void MainGame::initUI()
 	charactorsArea->setAnchorPoint(Vec2(0.5, 0.5));
 	charactorsArea->setPosition(Vec2(visibleSize.width/2, visibleSize.height/3));
 	addChild(charactorsArea);
+
+	// info area
+	// title
+	chnStrings = Dictionary::createWithContentsOfFile("poem.xml");
+	const char* dstr = ((String*)chnStrings->objectForKey("app"))->getCString();
+	title = Label::create(dstr, "Arial", 40);
+	title->setPosition(Vec2(visibleSize.width / 2, origin.y + visibleSize.height - title->getContentSize().height));
+	addChild(title);
+
+	// author
+	author = Label::create(dstr, "Arial", 25);
+	author->setPosition(Vec2(visibleSize.width / 4, title->getPositionY() - title->getContentSize().height - author->getContentSize().height));
+	addChild(author);
+
+	// dynasty
+	dynasty = Label::create(dstr, "Arial", 25);
+	dynasty->setPosition(Vec2(visibleSize.width * 3 / 4, title->getPositionY() - title->getContentSize().height - dynasty->getContentSize().height));
+	addChild(dynasty);
+
+	// note area
+	const char* notestr = ((String*)chnStrings->objectForKey("need_note"))->getCString();
+	noteLbl = Label::create(notestr, "Arial", 30);
+	noteLbl->setPosition(Vec2(visibleSize.width / 2, dynasty->getPositionY() - dynasty->getContentSize().height - noteLbl->getContentSize().height));
+	addChild(noteLbl);
 
 	// add touch listener
 	auto listener = EventListenerTouchOneByOne::create();
@@ -99,38 +121,30 @@ void MainGame::initLevel()
 
 	auto visibleSize = Director::getInstance()->getVisibleSize();
 	Vec2 origin = Director::getInstance()->getVisibleOrigin();
+	chnStrings = Dictionary::createWithContentsOfFile("poem.xml");
 
 	// info area
 	// title
 	std::string ts = StringUtils::format("poem%d", level);
 	const char* titstr = ts.c_str();
 	const char* tstr = ((String*)chnStrings->objectForKey(titstr))->getCString();
-	auto title = Label::create(tstr, "Arial", 40);
-	title->setPosition(Vec2(visibleSize.width / 2, origin.y + visibleSize.height - title->getContentSize().height));
-	addChild(title);
+	title->setString(tstr);
 
 	// author
 	std::string as = StringUtils::format("author%d", level);
 	const char* austr = as.c_str();
 	const char* astr = ((String*)chnStrings->objectForKey(austr))->getCString();
-	auto author = Label::create(astr, "Arial", 25);
-	author->setPosition(Vec2(visibleSize.width / 4, title->getPositionY() - title->getContentSize().height - author->getContentSize().height));
-	addChild(author);
+	author->setString(astr);
 
 	// dynasty
 	std::string ds = StringUtils::format("dynasty%d", level);
 	const char* dystr = ds.c_str();
 	const char* dstr = ((String*)chnStrings->objectForKey(dystr))->getCString();
-	auto dynasty = Label::create(dstr, "Arial", 25);
-	dynasty->setPosition(Vec2(visibleSize.width * 3 / 4, title->getPositionY() - title->getContentSize().height - dynasty->getContentSize().height));
-	addChild(dynasty);
+	dynasty->setString(dstr);
 
 	// note area
-	const char* notestr = ((String*)chnStrings->objectForKey("need_note"))->getCString();
-	noteLbl = Label::create(notestr, "Arial", 30);
-	noteLbl->setPosition(Vec2(visibleSize.width / 2, dynasty->getPositionY() - dynasty->getContentSize().height - noteLbl->getContentSize().height));
-	addChild(noteLbl);
 
+	// charactors
 	std::string levels = StringUtils::format("level%d", level);
 	const char* levelStr = levels.c_str();
 	const char* cstr = ((String*)chnStrings->objectForKey(levelStr))->getCString();
@@ -188,11 +202,11 @@ bool MainGame::onTouchBeganCharactor(Touch * touch, Event * event)
 					CCParticleSystem* particleSystem = CCParticleExplosion::create();
 					//particleSystem->setTexture(CCTextureCache::sharedTextureCache()->addImage("stars.png"));
 					addChild(particleSystem);
+					selectedCharactors.clear();
+					selectedCount = 0;
+					selectedStr.clear();
 				}
-				selectedCharactors.clear();
-				selectedCount = 0;
-				selectedStr.clear();
-
+				
 				// if this stage is cleaned
 				if (progressTimer->getPercentage() == 100) {
 					level++;
