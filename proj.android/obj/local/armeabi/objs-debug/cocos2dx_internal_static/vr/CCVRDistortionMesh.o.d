@@ -1,65 +1,65 @@
 obj/local/armeabi/objs-debug/cocos2dx_internal_static/vr/CCVRDistortionMesh.o: \
- D:/workspace/Poem/cocos2d/cocos/./vr/CCVRDistortionMesh.cpp \
- D:/workspace/Poem/cocos2d/cocos/./vr/CCVRDistortionMesh.h \
- D:/workspace/Poem/cocos2d/cocos/./platform/CCPlatformMacros.h \
- D:/workspace/Poem/cocos2d/cocos/./base/ccConfig.h \
- D:/workspace/Poem/cocos2d/cocos/./platform/CCPlatformConfig.h \
- D:/workspace/Poem/cocos2d/cocos/./platform/CCPlatformDefine.h \
- D:/workspace/Poem/cocos2d/cocos/./platform/android/CCPlatformDefine-android.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/android/log.h \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/vector \
- D:/workspace/Poem/cocos2d/cocos/./vr/CCVRDistortion.h \
- D:/workspace/Poem/cocos2d/cocos/./math/Vec2.h \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/functional \
- D:/workspace/Poem/cocos2d/cocos/./math/CCMathBase.h \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/memory \
- D:/workspace/Poem/cocos2d/cocos/./math/Vec2.inl \
- D:/workspace/Poem/cocos2d/cocos/./platform/CCGL.h \
- D:/workspace/Poem/cocos2d/cocos/./platform/android/CCGL-android.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/GLES2/gl2platform.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/KHR/khrplatform.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/GLES2/gl2.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/GLES2/gl2ext.h
+ H:/CocosProject/Poem/cocos2d/cocos/./vr/CCVRDistortionMesh.cpp \
+ H:/CocosProject/Poem/cocos2d/cocos/./vr/CCVRDistortionMesh.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./platform/CCPlatformMacros.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./base/ccConfig.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./platform/CCPlatformConfig.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./platform/CCPlatformDefine.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./platform/android/CCPlatformDefine-android.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/log.h \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/vector \
+ H:/CocosProject/Poem/cocos2d/cocos/./vr/CCVRDistortion.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./math/Vec2.h \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/functional \
+ H:/CocosProject/Poem/cocos2d/cocos/./math/CCMathBase.h \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/memory \
+ H:/CocosProject/Poem/cocos2d/cocos/./math/Vec2.inl \
+ H:/CocosProject/Poem/cocos2d/cocos/./platform/CCGL.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./platform/android/CCGL-android.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/GLES2/gl2platform.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/KHR/khrplatform.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/GLES2/gl2.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/GLES2/gl2ext.h
 
-D:/workspace/Poem/cocos2d/cocos/./vr/CCVRDistortionMesh.h:
+H:/CocosProject/Poem/cocos2d/cocos/./vr/CCVRDistortionMesh.h:
 
-D:/workspace/Poem/cocos2d/cocos/./platform/CCPlatformMacros.h:
+H:/CocosProject/Poem/cocos2d/cocos/./platform/CCPlatformMacros.h:
 
-D:/workspace/Poem/cocos2d/cocos/./base/ccConfig.h:
+H:/CocosProject/Poem/cocos2d/cocos/./base/ccConfig.h:
 
-D:/workspace/Poem/cocos2d/cocos/./platform/CCPlatformConfig.h:
+H:/CocosProject/Poem/cocos2d/cocos/./platform/CCPlatformConfig.h:
 
-D:/workspace/Poem/cocos2d/cocos/./platform/CCPlatformDefine.h:
+H:/CocosProject/Poem/cocos2d/cocos/./platform/CCPlatformDefine.h:
 
-D:/workspace/Poem/cocos2d/cocos/./platform/android/CCPlatformDefine-android.h:
+H:/CocosProject/Poem/cocos2d/cocos/./platform/android/CCPlatformDefine-android.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/android/log.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/log.h:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/vector:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/vector:
 
-D:/workspace/Poem/cocos2d/cocos/./vr/CCVRDistortion.h:
+H:/CocosProject/Poem/cocos2d/cocos/./vr/CCVRDistortion.h:
 
-D:/workspace/Poem/cocos2d/cocos/./math/Vec2.h:
+H:/CocosProject/Poem/cocos2d/cocos/./math/Vec2.h:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/functional:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/functional:
 
-D:/workspace/Poem/cocos2d/cocos/./math/CCMathBase.h:
+H:/CocosProject/Poem/cocos2d/cocos/./math/CCMathBase.h:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/memory:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/memory:
 
-D:/workspace/Poem/cocos2d/cocos/./math/Vec2.inl:
+H:/CocosProject/Poem/cocos2d/cocos/./math/Vec2.inl:
 
-D:/workspace/Poem/cocos2d/cocos/./platform/CCGL.h:
+H:/CocosProject/Poem/cocos2d/cocos/./platform/CCGL.h:
 
-D:/workspace/Poem/cocos2d/cocos/./platform/android/CCGL-android.h:
+H:/CocosProject/Poem/cocos2d/cocos/./platform/android/CCGL-android.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/GLES2/gl2platform.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/GLES2/gl2platform.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/KHR/khrplatform.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/KHR/khrplatform.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/GLES2/gl2.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/GLES2/gl2.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/GLES2/gl2ext.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/GLES2/gl2ext.h:

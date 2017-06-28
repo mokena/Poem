@@ -1,143 +1,143 @@
 obj/local/armeabi/objs-debug/cocos2dx_internal_static/2d/CCComponent.o: \
- D:/workspace/Poem/cocos2d/cocos/./2d/CCComponent.cpp \
- D:/workspace/Poem/cocos2d/cocos/./2d/CCComponent.h \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/string \
- D:/workspace/Poem/cocos2d/cocos/./base/CCRef.h \
- D:/workspace/Poem/cocos2d/cocos/./platform/CCPlatformMacros.h \
- D:/workspace/Poem/cocos2d/cocos/./base/ccConfig.h \
- D:/workspace/Poem/cocos2d/cocos/./platform/CCPlatformConfig.h \
- D:/workspace/Poem/cocos2d/cocos/./platform/CCPlatformDefine.h \
- D:/workspace/Poem/cocos2d/cocos/./platform/android/CCPlatformDefine-android.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/android/log.h \
- D:/workspace/Poem/cocos2d/cocos/./base/CCScriptSupport.h \
- D:/workspace/Poem/cocos2d/cocos/./platform/CCCommon.h \
- D:/workspace/Poem/cocos2d/cocos/./base/CCTouch.h \
- D:/workspace/Poem/cocos2d/cocos/./math/CCGeometry.h \
- D:/workspace/Poem/cocos2d/cocos/./base/ccMacros.h \
- D:/workspace/Poem/cocos2d/cocos/./base/CCConsole.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/select.h \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/thread \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/vector \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/map \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/mutex \
- D:/workspace/Poem/cocos2d/cocos/./platform/CCStdC.h \
- D:/workspace/Poem/cocos2d/cocos/./platform/android/CCStdC-android.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/math.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/stdlib.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/alloca.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/strings.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/memory.h \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert \
- D:/workspace/Poem/cocos2d/cocos/./base/ccRandom.h \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/random \
- D:/workspace/Poem/cocos2d/cocos/./math/CCMath.h \
- D:/workspace/Poem/cocos2d/cocos/./math/Vec2.h \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm \
- D:/workspace/Poem/cocos2d/cocos/./math/CCMathBase.h \
- D:/workspace/Poem/cocos2d/cocos/./math/Vec2.inl \
- D:/workspace/Poem/cocos2d/cocos/./math/Vec3.h \
- D:/workspace/Poem/cocos2d/cocos/./math/Vec3.inl \
- D:/workspace/Poem/cocos2d/cocos/./math/Mat4.h \
- D:/workspace/Poem/cocos2d/cocos/./math/Vec4.h \
- D:/workspace/Poem/cocos2d/cocos/./math/Vec4.inl \
- D:/workspace/Poem/cocos2d/cocos/./math/Mat4.inl \
- D:/workspace/Poem/cocos2d/cocos/./math/Quaternion.h \
- D:/workspace/Poem/cocos2d/cocos/./math/Quaternion.inl \
- D:/workspace/Poem/cocos2d/cocos/./base/CCEventTouch.h \
- D:/workspace/Poem/cocos2d/cocos/./base/CCEvent.h \
- D:/workspace/Poem/cocos2d/cocos/./base/CCEventKeyboard.h \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/list
+ H:/CocosProject/Poem/cocos2d/cocos/./2d/CCComponent.cpp \
+ H:/CocosProject/Poem/cocos2d/cocos/./2d/CCComponent.h \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/string \
+ H:/CocosProject/Poem/cocos2d/cocos/./base/CCRef.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./platform/CCPlatformMacros.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./base/ccConfig.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./platform/CCPlatformConfig.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./platform/CCPlatformDefine.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./platform/android/CCPlatformDefine-android.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/log.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./base/CCScriptSupport.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./platform/CCCommon.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./base/CCTouch.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./math/CCGeometry.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./base/ccMacros.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./base/CCConsole.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/select.h \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/thread \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/vector \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/map \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/mutex \
+ H:/CocosProject/Poem/cocos2d/cocos/./platform/CCStdC.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./platform/android/CCStdC-android.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/math.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/stdlib.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/alloca.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/strings.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/memory.h \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert \
+ H:/CocosProject/Poem/cocos2d/cocos/./base/ccRandom.h \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/random \
+ H:/CocosProject/Poem/cocos2d/cocos/./math/CCMath.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./math/Vec2.h \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm \
+ H:/CocosProject/Poem/cocos2d/cocos/./math/CCMathBase.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./math/Vec2.inl \
+ H:/CocosProject/Poem/cocos2d/cocos/./math/Vec3.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./math/Vec3.inl \
+ H:/CocosProject/Poem/cocos2d/cocos/./math/Mat4.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./math/Vec4.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./math/Vec4.inl \
+ H:/CocosProject/Poem/cocos2d/cocos/./math/Mat4.inl \
+ H:/CocosProject/Poem/cocos2d/cocos/./math/Quaternion.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./math/Quaternion.inl \
+ H:/CocosProject/Poem/cocos2d/cocos/./base/CCEventTouch.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./base/CCEvent.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./base/CCEventKeyboard.h \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/list
 
-D:/workspace/Poem/cocos2d/cocos/./2d/CCComponent.h:
+H:/CocosProject/Poem/cocos2d/cocos/./2d/CCComponent.h:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/string:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/string:
 
-D:/workspace/Poem/cocos2d/cocos/./base/CCRef.h:
+H:/CocosProject/Poem/cocos2d/cocos/./base/CCRef.h:
 
-D:/workspace/Poem/cocos2d/cocos/./platform/CCPlatformMacros.h:
+H:/CocosProject/Poem/cocos2d/cocos/./platform/CCPlatformMacros.h:
 
-D:/workspace/Poem/cocos2d/cocos/./base/ccConfig.h:
+H:/CocosProject/Poem/cocos2d/cocos/./base/ccConfig.h:
 
-D:/workspace/Poem/cocos2d/cocos/./platform/CCPlatformConfig.h:
+H:/CocosProject/Poem/cocos2d/cocos/./platform/CCPlatformConfig.h:
 
-D:/workspace/Poem/cocos2d/cocos/./platform/CCPlatformDefine.h:
+H:/CocosProject/Poem/cocos2d/cocos/./platform/CCPlatformDefine.h:
 
-D:/workspace/Poem/cocos2d/cocos/./platform/android/CCPlatformDefine-android.h:
+H:/CocosProject/Poem/cocos2d/cocos/./platform/android/CCPlatformDefine-android.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/android/log.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/log.h:
 
-D:/workspace/Poem/cocos2d/cocos/./base/CCScriptSupport.h:
+H:/CocosProject/Poem/cocos2d/cocos/./base/CCScriptSupport.h:
 
-D:/workspace/Poem/cocos2d/cocos/./platform/CCCommon.h:
+H:/CocosProject/Poem/cocos2d/cocos/./platform/CCCommon.h:
 
-D:/workspace/Poem/cocos2d/cocos/./base/CCTouch.h:
+H:/CocosProject/Poem/cocos2d/cocos/./base/CCTouch.h:
 
-D:/workspace/Poem/cocos2d/cocos/./math/CCGeometry.h:
+H:/CocosProject/Poem/cocos2d/cocos/./math/CCGeometry.h:
 
-D:/workspace/Poem/cocos2d/cocos/./base/ccMacros.h:
+H:/CocosProject/Poem/cocos2d/cocos/./base/ccMacros.h:
 
-D:/workspace/Poem/cocos2d/cocos/./base/CCConsole.h:
+H:/CocosProject/Poem/cocos2d/cocos/./base/CCConsole.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/select.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/select.h:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/thread:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/thread:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/vector:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/vector:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/map:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/map:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/mutex:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/mutex:
 
-D:/workspace/Poem/cocos2d/cocos/./platform/CCStdC.h:
+H:/CocosProject/Poem/cocos2d/cocos/./platform/CCStdC.h:
 
-D:/workspace/Poem/cocos2d/cocos/./platform/android/CCStdC-android.h:
+H:/CocosProject/Poem/cocos2d/cocos/./platform/android/CCStdC-android.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/math.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/math.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/stdlib.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/stdlib.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/alloca.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/alloca.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/strings.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/strings.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/memory.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/memory.h:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert:
 
-D:/workspace/Poem/cocos2d/cocos/./base/ccRandom.h:
+H:/CocosProject/Poem/cocos2d/cocos/./base/ccRandom.h:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/random:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/random:
 
-D:/workspace/Poem/cocos2d/cocos/./math/CCMath.h:
+H:/CocosProject/Poem/cocos2d/cocos/./math/CCMath.h:
 
-D:/workspace/Poem/cocos2d/cocos/./math/Vec2.h:
+H:/CocosProject/Poem/cocos2d/cocos/./math/Vec2.h:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm:
 
-D:/workspace/Poem/cocos2d/cocos/./math/CCMathBase.h:
+H:/CocosProject/Poem/cocos2d/cocos/./math/CCMathBase.h:
 
-D:/workspace/Poem/cocos2d/cocos/./math/Vec2.inl:
+H:/CocosProject/Poem/cocos2d/cocos/./math/Vec2.inl:
 
-D:/workspace/Poem/cocos2d/cocos/./math/Vec3.h:
+H:/CocosProject/Poem/cocos2d/cocos/./math/Vec3.h:
 
-D:/workspace/Poem/cocos2d/cocos/./math/Vec3.inl:
+H:/CocosProject/Poem/cocos2d/cocos/./math/Vec3.inl:
 
-D:/workspace/Poem/cocos2d/cocos/./math/Mat4.h:
+H:/CocosProject/Poem/cocos2d/cocos/./math/Mat4.h:
 
-D:/workspace/Poem/cocos2d/cocos/./math/Vec4.h:
+H:/CocosProject/Poem/cocos2d/cocos/./math/Vec4.h:
 
-D:/workspace/Poem/cocos2d/cocos/./math/Vec4.inl:
+H:/CocosProject/Poem/cocos2d/cocos/./math/Vec4.inl:
 
-D:/workspace/Poem/cocos2d/cocos/./math/Mat4.inl:
+H:/CocosProject/Poem/cocos2d/cocos/./math/Mat4.inl:
 
-D:/workspace/Poem/cocos2d/cocos/./math/Quaternion.h:
+H:/CocosProject/Poem/cocos2d/cocos/./math/Quaternion.h:
 
-D:/workspace/Poem/cocos2d/cocos/./math/Quaternion.inl:
+H:/CocosProject/Poem/cocos2d/cocos/./math/Quaternion.inl:
 
-D:/workspace/Poem/cocos2d/cocos/./base/CCEventTouch.h:
+H:/CocosProject/Poem/cocos2d/cocos/./base/CCEventTouch.h:
 
-D:/workspace/Poem/cocos2d/cocos/./base/CCEvent.h:
+H:/CocosProject/Poem/cocos2d/cocos/./base/CCEvent.h:
 
-D:/workspace/Poem/cocos2d/cocos/./base/CCEventKeyboard.h:
+H:/CocosProject/Poem/cocos2d/cocos/./base/CCEventKeyboard.h:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/list:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/list:

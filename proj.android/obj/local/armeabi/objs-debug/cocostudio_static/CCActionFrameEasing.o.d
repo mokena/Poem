@@ -1,209 +1,161 @@
 obj/local/armeabi/objs-debug/cocostudio_static/CCActionFrameEasing.o: \
- D:/workspace/Poem/cocos2d/cocos/editor-support/cocostudio/CCActionFrameEasing.cpp \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/math.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/cdefs.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/cdefs_elf.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/android/api-level.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/types.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/stdint.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/_types.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/_types.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/_wchar_limits.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/posix_types.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/stddef.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/compiler.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/posix_types.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/types.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/types.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/kernel.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/sysmacros.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/limits.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/limits.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/limits.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/internal_types.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/limits.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/syslimits.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/page.h \
- D:/workspace/Poem/cocos2d/cocos/./editor-support/cocostudio/CCActionFrameEasing.h \
- D:/workspace/Poem/cocos2d/cocos/./base/CCRef.h \
- D:/workspace/Poem/cocos2d/cocos/./platform/CCPlatformMacros.h \
- D:/workspace/Poem/cocos2d/cocos/./base/ccConfig.h \
- D:/workspace/Poem/cocos2d/cocos/./platform/CCPlatformConfig.h \
- D:/workspace/Poem/cocos2d/cocos/./platform/CCPlatformDefine.h \
- D:/workspace/Poem/cocos2d/cocos/./platform/android/CCPlatformDefine-android.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/android/log.h \
- D:/workspace/Poem/cocos2d/cocos/./editor-support/cocostudio/CocosStudioExport.h \
- D:/workspace/Poem/cocos2d/cocos/./editor-support/cocostudio/DictionaryHelper.h \
- D:/workspace/Poem/cocos2d/external/flatbuffers/../json/document-wrapper.h \
- D:/workspace/Poem/cocos2d/external/flatbuffers/../json/rapidjson.h \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cstdlib \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cstring \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/inttypes.h \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert \
- D:/workspace/Poem/cocos2d/external/flatbuffers/../json/document.h \
- D:/workspace/Poem/cocos2d/external/flatbuffers/../json/reader.h \
- D:/workspace/Poem/cocos2d/external/flatbuffers/../json/allocators.h \
- D:/workspace/Poem/cocos2d/external/flatbuffers/../json/rapidjson.h \
- D:/workspace/Poem/cocos2d/external/flatbuffers/../json/stream.h \
- D:/workspace/Poem/cocos2d/external/flatbuffers/../json/encodings.h \
- D:/workspace/Poem/cocos2d/external/flatbuffers/../json/encodedstream.h \
- D:/workspace/Poem/cocos2d/external/flatbuffers/../json/memorystream.h \
- D:/workspace/Poem/cocos2d/external/flatbuffers/../json/internal/meta.h \
- D:/workspace/Poem/cocos2d/external/flatbuffers/../json/internal/../rapidjson.h \
- D:/workspace/Poem/cocos2d/external/flatbuffers/../json/internal/stack.h \
- D:/workspace/Poem/cocos2d/external/flatbuffers/../json/internal/../allocators.h \
- D:/workspace/Poem/cocos2d/external/flatbuffers/../json/internal/swap.h \
- D:/workspace/Poem/cocos2d/external/flatbuffers/../json/internal/strtod.h \
- D:/workspace/Poem/cocos2d/external/flatbuffers/../json/internal/ieee754.h \
- D:/workspace/Poem/cocos2d/external/flatbuffers/../json/internal/biginteger.h \
- D:/workspace/Poem/cocos2d/external/flatbuffers/../json/internal/diyfp.h \
- D:/workspace/Poem/cocos2d/external/flatbuffers/../json/internal/pow10.h \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/limits \
- D:/workspace/Poem/cocos2d/external/flatbuffers/../json/error/error.h \
- D:/workspace/Poem/cocos2d/external/flatbuffers/../json/error/../rapidjson.h \
- D:/workspace/Poem/cocos2d/external/flatbuffers/../json/internal/strfunc.h \
- D:/workspace/Poem/cocos2d/external/flatbuffers/../json/internal/../stream.h \
- D:/workspace/Poem/cocos2d/external/flatbuffers/../json/internal/../rapidjson.h \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/new \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/iterator \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/utility \
- D:/workspace/Poem/cocos2d/cocos/./platform/CCStdC.h \
- D:/workspace/Poem/cocos2d/cocos/./platform/android/CCStdC-android.h
+ H:/CocosProject/Poem/cocos2d/cocos/editor-support/cocostudio/CCActionFrameEasing.cpp \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/math.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs_elf.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/api-level.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/limits.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/limits.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/limits.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/syslimits.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./editor-support/cocostudio/CCActionFrameEasing.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./base/CCRef.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./platform/CCPlatformMacros.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./base/ccConfig.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./platform/CCPlatformConfig.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./platform/CCPlatformDefine.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./platform/android/CCPlatformDefine-android.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/log.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./editor-support/cocostudio/CocosStudioExport.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./editor-support/cocostudio/DictionaryHelper.h \
+ H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/document-wrapper.h \
+ H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/rapidjson.h \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cstdlib \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cstring \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/inttypes.h \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert \
+ H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/document.h \
+ H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/reader.h \
+ H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/allocators.h \
+ H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/rapidjson.h \
+ H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/stream.h \
+ H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/encodings.h \
+ H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/encodedstream.h \
+ H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/memorystream.h \
+ H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/internal/meta.h \
+ H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/internal/../rapidjson.h \
+ H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/internal/stack.h \
+ H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/internal/../allocators.h \
+ H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/internal/swap.h \
+ H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/internal/strtod.h \
+ H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/internal/ieee754.h \
+ H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/internal/biginteger.h \
+ H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/internal/diyfp.h \
+ H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/internal/pow10.h \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/limits \
+ H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/error/error.h \
+ H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/error/../rapidjson.h \
+ H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/internal/strfunc.h \
+ H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/internal/../stream.h \
+ H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/internal/../rapidjson.h \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/new \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/iterator \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/utility \
+ H:/CocosProject/Poem/cocos2d/cocos/./platform/CCStdC.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./platform/android/CCStdC-android.h
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/math.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/math.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/cdefs.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/cdefs_elf.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs_elf.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/android/api-level.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/api-level.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/types.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/limits.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/stdint.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/limits.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/_types.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/limits.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/_types.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/syslimits.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/_wchar_limits.h:
+H:/CocosProject/Poem/cocos2d/cocos/./editor-support/cocostudio/CCActionFrameEasing.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/posix_types.h:
+H:/CocosProject/Poem/cocos2d/cocos/./base/CCRef.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/stddef.h:
+H:/CocosProject/Poem/cocos2d/cocos/./platform/CCPlatformMacros.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/compiler.h:
+H:/CocosProject/Poem/cocos2d/cocos/./base/ccConfig.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/posix_types.h:
+H:/CocosProject/Poem/cocos2d/cocos/./platform/CCPlatformConfig.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/types.h:
+H:/CocosProject/Poem/cocos2d/cocos/./platform/CCPlatformDefine.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/types.h:
+H:/CocosProject/Poem/cocos2d/cocos/./platform/android/CCPlatformDefine-android.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/kernel.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/log.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/sysmacros.h:
+H:/CocosProject/Poem/cocos2d/cocos/./editor-support/cocostudio/CocosStudioExport.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/limits.h:
+H:/CocosProject/Poem/cocos2d/cocos/./editor-support/cocostudio/DictionaryHelper.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/limits.h:
+H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/document-wrapper.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/limits.h:
+H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/rapidjson.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/internal_types.h:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cstdlib:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/limits.h:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cstring:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/syslimits.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/inttypes.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/page.h:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert:
 
-D:/workspace/Poem/cocos2d/cocos/./editor-support/cocostudio/CCActionFrameEasing.h:
+H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/document.h:
 
-D:/workspace/Poem/cocos2d/cocos/./base/CCRef.h:
+H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/reader.h:
 
-D:/workspace/Poem/cocos2d/cocos/./platform/CCPlatformMacros.h:
+H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/allocators.h:
 
-D:/workspace/Poem/cocos2d/cocos/./base/ccConfig.h:
+H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/rapidjson.h:
 
-D:/workspace/Poem/cocos2d/cocos/./platform/CCPlatformConfig.h:
+H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/stream.h:
 
-D:/workspace/Poem/cocos2d/cocos/./platform/CCPlatformDefine.h:
+H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/encodings.h:
 
-D:/workspace/Poem/cocos2d/cocos/./platform/android/CCPlatformDefine-android.h:
+H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/encodedstream.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/android/log.h:
+H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/memorystream.h:
 
-D:/workspace/Poem/cocos2d/cocos/./editor-support/cocostudio/CocosStudioExport.h:
+H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/internal/meta.h:
 
-D:/workspace/Poem/cocos2d/cocos/./editor-support/cocostudio/DictionaryHelper.h:
+H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/internal/../rapidjson.h:
 
-D:/workspace/Poem/cocos2d/external/flatbuffers/../json/document-wrapper.h:
+H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/internal/stack.h:
 
-D:/workspace/Poem/cocos2d/external/flatbuffers/../json/rapidjson.h:
+H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/internal/../allocators.h:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cstdlib:
+H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/internal/swap.h:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cstring:
+H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/internal/strtod.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/inttypes.h:
+H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/internal/ieee754.h:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert:
+H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/internal/biginteger.h:
 
-D:/workspace/Poem/cocos2d/external/flatbuffers/../json/document.h:
+H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/internal/diyfp.h:
 
-D:/workspace/Poem/cocos2d/external/flatbuffers/../json/reader.h:
+H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/internal/pow10.h:
 
-D:/workspace/Poem/cocos2d/external/flatbuffers/../json/allocators.h:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/limits:
 
-D:/workspace/Poem/cocos2d/external/flatbuffers/../json/rapidjson.h:
+H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/error/error.h:
 
-D:/workspace/Poem/cocos2d/external/flatbuffers/../json/stream.h:
+H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/error/../rapidjson.h:
 
-D:/workspace/Poem/cocos2d/external/flatbuffers/../json/encodings.h:
+H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/internal/strfunc.h:
 
-D:/workspace/Poem/cocos2d/external/flatbuffers/../json/encodedstream.h:
+H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/internal/../stream.h:
 
-D:/workspace/Poem/cocos2d/external/flatbuffers/../json/memorystream.h:
+H:/CocosProject/Poem/cocos2d/external/flatbuffers/../json/internal/../rapidjson.h:
 
-D:/workspace/Poem/cocos2d/external/flatbuffers/../json/internal/meta.h:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/new:
 
-D:/workspace/Poem/cocos2d/external/flatbuffers/../json/internal/../rapidjson.h:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/iterator:
 
-D:/workspace/Poem/cocos2d/external/flatbuffers/../json/internal/stack.h:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/utility:
 
-D:/workspace/Poem/cocos2d/external/flatbuffers/../json/internal/../allocators.h:
+H:/CocosProject/Poem/cocos2d/cocos/./platform/CCStdC.h:
 
-D:/workspace/Poem/cocos2d/external/flatbuffers/../json/internal/swap.h:
-
-D:/workspace/Poem/cocos2d/external/flatbuffers/../json/internal/strtod.h:
-
-D:/workspace/Poem/cocos2d/external/flatbuffers/../json/internal/ieee754.h:
-
-D:/workspace/Poem/cocos2d/external/flatbuffers/../json/internal/biginteger.h:
-
-D:/workspace/Poem/cocos2d/external/flatbuffers/../json/internal/diyfp.h:
-
-D:/workspace/Poem/cocos2d/external/flatbuffers/../json/internal/pow10.h:
-
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/limits:
-
-D:/workspace/Poem/cocos2d/external/flatbuffers/../json/error/error.h:
-
-D:/workspace/Poem/cocos2d/external/flatbuffers/../json/error/../rapidjson.h:
-
-D:/workspace/Poem/cocos2d/external/flatbuffers/../json/internal/strfunc.h:
-
-D:/workspace/Poem/cocos2d/external/flatbuffers/../json/internal/../stream.h:
-
-D:/workspace/Poem/cocos2d/external/flatbuffers/../json/internal/../rapidjson.h:
-
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/new:
-
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/iterator:
-
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/utility:
-
-D:/workspace/Poem/cocos2d/cocos/./platform/CCStdC.h:
-
-D:/workspace/Poem/cocos2d/cocos/./platform/android/CCStdC-android.h:
+H:/CocosProject/Poem/cocos2d/cocos/./platform/android/CCStdC-android.h:

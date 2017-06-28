@@ -6,5 +6,7 @@ proj.win8.1-universal/
 proj.win10/
 proj.win32/
 proj.tizen/
+proj.android/obj/
+proj.android/bin/
 .cocos-project.json
 CMakeLists.txt

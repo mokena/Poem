@@ -40,8 +40,11 @@ void MainGame::initUI()
 {
 	auto visibleSize = Director::getInstance()->getVisibleSize();
 	Vec2 origin = Director::getInstance()->getVisibleOrigin();
+	auto designSize = Director::getInstance()->getWinSize();
 
-	// background
+	scaleFactor = MIN(visibleSize.width / designSize.width, visibleSize.height / designSize.height);
+	
+		// background
 	auto bg = Sprite::create("bg.png");
 	bg->setAnchorPoint(Vec2(0, 0));
 	addChild(bg);
@@ -63,7 +66,8 @@ void MainGame::initUI()
 	// charactors area
 	charactorsArea = Sprite::create("charactorArea.png");
 	charactorsArea->setAnchorPoint(Vec2(0.5, 0.5));
-	charactorsArea->setPosition(Vec2(visibleSize.width/2, visibleSize.height/3));
+	charactorsArea->setPosition(Vec2(visibleSize.width/2 + origin.x, visibleSize.height/3 + origin.y));
+	charactorsArea->setScale(scaleFactor);
 	addChild(charactorsArea);
 
 	// info area
@@ -148,7 +152,7 @@ void MainGame::initLevel()
 	std::string levels = StringUtils::format("level%d", level);
 	const char* levelStr = levels.c_str();
 	const char* cstr = ((String*)chnStrings->objectForKey(levelStr))->getCString();
-	originalStr = StringUtils::format(cstr);
+	originalStr = StringUtils::toString(cstr);
 	Vector<Charactor*> oriCharactors; //charactors in the right order 
 
 	for (int i = 0; i < strlen(cstr); i += 3) {
@@ -184,7 +188,7 @@ bool MainGame::onTouchBeganCharactor(Touch * touch, Event * event)
 				// is smaller than a sentence
 				selectedStr.append(charactor->getString());
 				selectedCharactors.pushBack(charactor);
-				log("touched character %s", charactor->getString());
+				//log("touched character %s", charactor->getString());
 				selectedCount++;
 			}
 			else {

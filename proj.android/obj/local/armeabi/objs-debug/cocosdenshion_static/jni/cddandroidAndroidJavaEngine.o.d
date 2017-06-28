@@ -1,146 +1,146 @@
 obj/local/armeabi/objs-debug/cocosdenshion_static/jni/cddandroidAndroidJavaEngine.o: \
- D:/workspace/Poem/cocos2d/cocos/audio/android/jni/cddandroidAndroidJavaEngine.cpp \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/jni/cddandroidAndroidJavaEngine.h \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/include/SimpleAudioEngine.h \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/include/Export.h \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../platform/android/jni/JniHelper.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/jni.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/cdefs.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/cdefs_elf.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/android/api-level.h \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/string \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/vector \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_map \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/functional \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../platform/CCPlatformMacros.h \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../base/ccConfig.h \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../platform/CCPlatformConfig.h \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../platform/CCPlatformDefine.h \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../platform/android/CCPlatformDefine-android.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/android/log.h \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../math/Vec3.h \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cmath \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../math/CCMathBase.h \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/memory \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../math/Vec3.inl \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../math/Mat4.h \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../base/ccMacros.h \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../base/CCConsole.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/select.h \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/thread \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/map \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/mutex \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../base/CCRef.h \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../platform/CCStdC.h \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../platform/android/CCStdC-android.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/stdlib.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/alloca.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/strings.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/memory.h \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../base/ccRandom.h \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/random \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../math/Vec4.h \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../math/Vec4.inl \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../math/Mat4.inl \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/list \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/system_properties.h \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/ccdandroidUtils.h \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/utils/Utils.h \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/include/AudioEngine.h
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/jni/cddandroidAndroidJavaEngine.cpp \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/jni/cddandroidAndroidJavaEngine.h \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/include/SimpleAudioEngine.h \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/include/Export.h \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../platform/android/jni/JniHelper.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/jni.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs_elf.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/api-level.h \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/string \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/vector \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_map \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/functional \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../platform/CCPlatformMacros.h \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../base/ccConfig.h \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../platform/CCPlatformConfig.h \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../platform/CCPlatformDefine.h \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../platform/android/CCPlatformDefine-android.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/log.h \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../math/Vec3.h \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cmath \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../math/CCMathBase.h \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/memory \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../math/Vec3.inl \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../math/Mat4.h \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../base/ccMacros.h \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../base/CCConsole.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/select.h \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/thread \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/map \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/mutex \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../base/CCRef.h \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../platform/CCStdC.h \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../platform/android/CCStdC-android.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/stdlib.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/alloca.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/strings.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/memory.h \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../base/ccRandom.h \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/random \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../math/Vec4.h \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../math/Vec4.inl \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../math/Mat4.inl \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/list \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/system_properties.h \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/ccdandroidUtils.h \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/utils/Utils.h \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/include/AudioEngine.h
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/jni/cddandroidAndroidJavaEngine.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/jni/cddandroidAndroidJavaEngine.h:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/include/SimpleAudioEngine.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/include/SimpleAudioEngine.h:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/include/Export.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/include/Export.h:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../platform/android/jni/JniHelper.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../platform/android/jni/JniHelper.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/jni.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/jni.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/cdefs.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/cdefs_elf.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs_elf.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/android/api-level.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/api-level.h:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/string:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/string:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/vector:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/vector:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_map:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_map:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/functional:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/functional:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../platform/CCPlatformMacros.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../platform/CCPlatformMacros.h:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../base/ccConfig.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../base/ccConfig.h:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../platform/CCPlatformConfig.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../platform/CCPlatformConfig.h:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../platform/CCPlatformDefine.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../platform/CCPlatformDefine.h:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../platform/android/CCPlatformDefine-android.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../platform/android/CCPlatformDefine-android.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/android/log.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/log.h:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../math/Vec3.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../math/Vec3.h:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cmath:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cmath:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../math/CCMathBase.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../math/CCMathBase.h:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/memory:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/memory:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../math/Vec3.inl:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../math/Vec3.inl:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../math/Mat4.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../math/Mat4.h:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../base/ccMacros.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../base/ccMacros.h:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../base/CCConsole.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../base/CCConsole.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/select.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/select.h:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/thread:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/thread:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/map:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/map:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/mutex:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/mutex:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../base/CCRef.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../base/CCRef.h:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../platform/CCStdC.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../platform/CCStdC.h:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../platform/android/CCStdC-android.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../platform/android/CCStdC-android.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/stdlib.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/stdlib.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/alloca.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/alloca.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/strings.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/strings.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/memory.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/memory.h:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../base/ccRandom.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../base/ccRandom.h:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/random:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/random:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../math/Vec4.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../math/Vec4.h:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../math/Vec4.inl:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../math/Vec4.inl:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../math/Mat4.inl:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../math/Mat4.inl:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/list:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/list:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/system_properties.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/system_properties.h:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/ccdandroidUtils.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/ccdandroidUtils.h:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/utils/Utils.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/utils/Utils.h:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/include/AudioEngine.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/include/AudioEngine.h:

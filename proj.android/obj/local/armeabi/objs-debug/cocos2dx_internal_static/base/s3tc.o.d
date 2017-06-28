@@ -1,137 +1,134 @@
 obj/local/armeabi/objs-debug/cocos2dx_internal_static/base/s3tc.o: \
- D:/workspace/Poem/cocos2d/cocos/./base/s3tc.cpp \
- D:/workspace/Poem/cocos2d/cocos/./base/s3tc.h \
- D:/workspace/Poem/cocos2d/cocos/./platform/CCStdC.h \
- D:/workspace/Poem/cocos2d/cocos/./platform/CCPlatformConfig.h \
- D:/workspace/Poem/cocos2d/cocos/./platform/android/CCStdC-android.h \
- D:/workspace/Poem/cocos2d/cocos/./platform/CCPlatformMacros.h \
- D:/workspace/Poem/cocos2d/cocos/./base/ccConfig.h \
- D:/workspace/Poem/cocos2d/cocos/./platform/CCPlatformDefine.h \
- D:/workspace/Poem/cocos2d/cocos/./platform/android/CCPlatformDefine-android.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/android/log.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/math.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/cdefs.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/cdefs_elf.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/android/api-level.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/types.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/stdint.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/_types.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/_types.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/posix_types.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/stddef.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/compiler.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/posix_types.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/types.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/types.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/kernel.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/sysmacros.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/limits.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/limits.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/limits.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/internal_types.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/limits.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/syslimits.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/page.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/string.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/malloc.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/stdio.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/stdlib.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/alloca.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/strings.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/memory.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/time.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/time.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/time.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/siginfo.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm-generic/siginfo.h \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert
+ H:/CocosProject/Poem/cocos2d/cocos/./base/s3tc.cpp \
+ H:/CocosProject/Poem/cocos2d/cocos/./base/s3tc.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./platform/CCStdC.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./platform/CCPlatformConfig.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./platform/android/CCStdC-android.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./platform/CCPlatformMacros.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./base/ccConfig.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./platform/CCPlatformDefine.h \
+ H:/CocosProject/Poem/cocos2d/cocos/./platform/android/CCPlatformDefine-android.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/log.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/math.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs_elf.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/api-level.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/limits.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/limits.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/limits.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/syslimits.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/string.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/malloc.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/xlocale.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/stdio.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/types.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/stdint.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/machine/wchar_limits.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/types.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/types.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/types.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/int-ll64.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/bitsperlong.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/bitsperlong.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/posix_types.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/stddef.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/compiler.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/posix_types.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/posix_types.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/sysmacros.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/stdlib.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/alloca.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/strings.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/memory.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/time.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/time.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/time.h \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert
 
-D:/workspace/Poem/cocos2d/cocos/./base/s3tc.h:
+H:/CocosProject/Poem/cocos2d/cocos/./base/s3tc.h:
 
-D:/workspace/Poem/cocos2d/cocos/./platform/CCStdC.h:
+H:/CocosProject/Poem/cocos2d/cocos/./platform/CCStdC.h:
 
-D:/workspace/Poem/cocos2d/cocos/./platform/CCPlatformConfig.h:
+H:/CocosProject/Poem/cocos2d/cocos/./platform/CCPlatformConfig.h:
 
-D:/workspace/Poem/cocos2d/cocos/./platform/android/CCStdC-android.h:
+H:/CocosProject/Poem/cocos2d/cocos/./platform/android/CCStdC-android.h:
 
-D:/workspace/Poem/cocos2d/cocos/./platform/CCPlatformMacros.h:
+H:/CocosProject/Poem/cocos2d/cocos/./platform/CCPlatformMacros.h:
 
-D:/workspace/Poem/cocos2d/cocos/./base/ccConfig.h:
+H:/CocosProject/Poem/cocos2d/cocos/./base/ccConfig.h:
 
-D:/workspace/Poem/cocos2d/cocos/./platform/CCPlatformDefine.h:
+H:/CocosProject/Poem/cocos2d/cocos/./platform/CCPlatformDefine.h:
 
-D:/workspace/Poem/cocos2d/cocos/./platform/android/CCPlatformDefine-android.h:
+H:/CocosProject/Poem/cocos2d/cocos/./platform/android/CCPlatformDefine-android.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/android/log.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/log.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/math.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/math.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/cdefs.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/cdefs_elf.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs_elf.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/android/api-level.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/api-level.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/types.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/limits.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/stdint.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/limits.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/_types.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/limits.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/_types.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/syslimits.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/posix_types.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/string.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/stddef.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/malloc.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/compiler.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/xlocale.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/posix_types.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/stdio.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/types.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/types.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/types.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/stdint.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/kernel.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/machine/wchar_limits.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/sysmacros.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/types.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/limits.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/types.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/limits.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/types.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/limits.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/int-ll64.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/internal_types.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/bitsperlong.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/limits.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/bitsperlong.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/syslimits.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/posix_types.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/page.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/stddef.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/string.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/compiler.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/malloc.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/posix_types.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/stdio.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/posix_types.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/stdlib.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/sysmacros.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/alloca.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/stdlib.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/strings.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/alloca.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/memory.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/strings.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/time.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/memory.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/time.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/time.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/time.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/time.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/siginfo.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/time.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm-generic/siginfo.h:
-
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert:

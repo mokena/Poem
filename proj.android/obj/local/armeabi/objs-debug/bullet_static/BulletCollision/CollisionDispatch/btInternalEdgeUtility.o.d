@@ -1,233 +1,236 @@
 obj/local/armeabi/objs-debug/bullet_static/BulletCollision/CollisionDispatch/btInternalEdgeUtility.o: \
- D:/workspace/Poem/cocos2d/external/bullet/BulletCollision/CollisionDispatch/btInternalEdgeUtility.cpp \
- D:/workspace/Poem/cocos2d/external/bullet/BulletCollision/CollisionDispatch/btInternalEdgeUtility.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btHashMap.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btAlignedObjectArray.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btScalar.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/math.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/cdefs.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/cdefs_elf.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/android/api-level.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/types.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/stdint.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/_types.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/_types.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/posix_types.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/stddef.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/compiler.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/posix_types.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/types.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/types.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/kernel.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/sysmacros.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/limits.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/limits.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/limits.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/internal_types.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/limits.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/syslimits.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/page.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/stdlib.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/string.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/malloc.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/alloca.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/strings.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/memory.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/assert.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btAlignedAllocator.h \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/new \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btVector3.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btMinMax.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btTriangleInfoMap.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btSerializer.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btHashMap.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btBvhTriangleMeshShape.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btTriangleMeshShape.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btConcaveShape.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btCollisionShape.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btTransform.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btMatrix3x3.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btVector3.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btQuaternion.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btQuadWord.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/stdio.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btMatrix3x3.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//BroadphaseCollision/btBroadphaseProxy.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btScalar.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btAlignedAllocator.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btTriangleCallback.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btStridingMeshInterface.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btOptimizedBvh.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//BroadphaseCollision/btQuantizedBvh.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btAlignedObjectArray.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btTriangleInfoMap.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btScaledBvhTriangleMeshShape.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btTriangleShape.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btConvexShape.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btCollisionMargin.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btBoxShape.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btPolyhedralConvexShape.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btConvexInternalShape.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btAabbUtil2.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btTransform.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btMinMax.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionObject.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btMotionState.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//NarrowPhaseCollision/btManifoldPoint.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btTransformUtil.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btIDebugDraw.h \
- D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionObjectWrapper.h
+ H:/CocosProject/Poem/cocos2d/external/bullet/BulletCollision/CollisionDispatch/btInternalEdgeUtility.cpp \
+ H:/CocosProject/Poem/cocos2d/external/bullet/BulletCollision/CollisionDispatch/btInternalEdgeUtility.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btHashMap.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btAlignedObjectArray.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btScalar.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/math.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs_elf.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/api-level.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/limits.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/limits.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/limits.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/syslimits.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/stdlib.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/string.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/malloc.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/xlocale.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/alloca.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/strings.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/types.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/stdint.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/machine/wchar_limits.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/types.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/types.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/types.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/int-ll64.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/bitsperlong.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/bitsperlong.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/posix_types.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/stddef.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/compiler.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/posix_types.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/posix_types.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/sysmacros.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/memory.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/assert.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btAlignedAllocator.h \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/new \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btVector3.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btMinMax.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btTriangleInfoMap.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btSerializer.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btHashMap.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btBvhTriangleMeshShape.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btTriangleMeshShape.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btConcaveShape.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btCollisionShape.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btTransform.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btMatrix3x3.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btVector3.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btQuaternion.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btQuadWord.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/stdio.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btMatrix3x3.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//BroadphaseCollision/btBroadphaseProxy.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btScalar.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btAlignedAllocator.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btTriangleCallback.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btStridingMeshInterface.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btOptimizedBvh.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//BroadphaseCollision/btQuantizedBvh.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btAlignedObjectArray.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btTriangleInfoMap.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btScaledBvhTriangleMeshShape.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btTriangleShape.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btConvexShape.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btCollisionMargin.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btBoxShape.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btPolyhedralConvexShape.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btConvexInternalShape.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btAabbUtil2.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btTransform.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btMinMax.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionObject.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btMotionState.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//NarrowPhaseCollision/btManifoldPoint.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btTransformUtil.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btIDebugDraw.h \
+ H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionObjectWrapper.h
 
-D:/workspace/Poem/cocos2d/external/bullet/BulletCollision/CollisionDispatch/btInternalEdgeUtility.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/BulletCollision/CollisionDispatch/btInternalEdgeUtility.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btHashMap.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btHashMap.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btAlignedObjectArray.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btAlignedObjectArray.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btScalar.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btScalar.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/math.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/math.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/cdefs.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/cdefs_elf.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs_elf.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/android/api-level.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/api-level.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/types.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/limits.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/stdint.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/limits.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/_types.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/limits.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/_types.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/syslimits.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/posix_types.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/stdlib.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/stddef.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/string.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/compiler.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/malloc.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/posix_types.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/xlocale.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/types.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/alloca.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/types.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/strings.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/kernel.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/types.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/sysmacros.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/stdint.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/limits.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/machine/wchar_limits.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/limits.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/types.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/limits.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/types.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/internal_types.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/types.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/limits.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/int-ll64.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/syslimits.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/bitsperlong.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/page.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/bitsperlong.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/stdlib.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/posix_types.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/string.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/stddef.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/malloc.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/compiler.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/alloca.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/posix_types.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/strings.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/posix_types.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/memory.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/sysmacros.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/assert.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/memory.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btAlignedAllocator.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/assert.h:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/new:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btAlignedAllocator.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btVector3.h:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/new:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btMinMax.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btVector3.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btTriangleInfoMap.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btMinMax.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btSerializer.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btTriangleInfoMap.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btHashMap.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btSerializer.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btBvhTriangleMeshShape.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btHashMap.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btTriangleMeshShape.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btBvhTriangleMeshShape.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btConcaveShape.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btTriangleMeshShape.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btCollisionShape.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btConcaveShape.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btTransform.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btCollisionShape.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btMatrix3x3.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btTransform.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btVector3.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btMatrix3x3.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btQuaternion.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btVector3.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btQuadWord.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btQuaternion.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/stdio.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btQuadWord.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btMatrix3x3.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/stdio.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//BroadphaseCollision/btBroadphaseProxy.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btMatrix3x3.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btScalar.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//BroadphaseCollision/btBroadphaseProxy.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btAlignedAllocator.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btScalar.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btTriangleCallback.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btAlignedAllocator.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btStridingMeshInterface.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btTriangleCallback.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btOptimizedBvh.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btStridingMeshInterface.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//BroadphaseCollision/btQuantizedBvh.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btOptimizedBvh.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btAlignedObjectArray.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//BroadphaseCollision/btQuantizedBvh.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btTriangleInfoMap.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btAlignedObjectArray.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btScaledBvhTriangleMeshShape.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btTriangleInfoMap.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btTriangleShape.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btScaledBvhTriangleMeshShape.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btConvexShape.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btTriangleShape.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btCollisionMargin.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btConvexShape.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btBoxShape.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btCollisionMargin.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btPolyhedralConvexShape.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btBoxShape.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btConvexInternalShape.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btPolyhedralConvexShape.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btAabbUtil2.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btConvexInternalShape.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btTransform.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btAabbUtil2.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btMinMax.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btTransform.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionObject.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btMinMax.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btMotionState.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionObject.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//NarrowPhaseCollision/btManifoldPoint.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btMotionState.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btTransformUtil.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//NarrowPhaseCollision/btManifoldPoint.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/LinearMath/btIDebugDraw.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btTransformUtil.h:
 
-D:/workspace/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionObjectWrapper.h:
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/LinearMath/btIDebugDraw.h:
+
+H:/CocosProject/Poem/cocos2d/external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionObjectWrapper.h:

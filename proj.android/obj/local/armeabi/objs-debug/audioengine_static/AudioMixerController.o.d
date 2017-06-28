@@ -1,173 +1,179 @@
 obj/local/armeabi/objs-debug/audioengine_static/AudioMixerController.o: \
- D:/workspace/Poem/cocos2d/cocos/audio/android/AudioMixerController.cpp \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/AudioMixerController.h \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/utils/Errors.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/types.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/stdint.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/_types.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/_types.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/cdefs.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/cdefs_elf.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/android/api-level.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/posix_types.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/stddef.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/compiler.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/posix_types.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/types.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/types.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/kernel.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/sysmacros.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/errno.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/errno.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/errno.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm-generic/errno.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm-generic/errno-base.h \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/thread \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/mutex \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/condition_variable \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/atomic \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/vector \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/AudioMixer.h \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/AudioBufferProvider.h \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/AudioResamplerPublic.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/math.h \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/AudioResampler.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/android/log.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/system_properties.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/assert.h \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/audio.h \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/cutils/bitops.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/strings.h \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/Track.h \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/PcmData.h \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/IVolumeProvider.h \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/audio_utils/include/audio_utils/minifloat.h \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/PcmBufferProvider.h \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/OpenSLHelper.h \
- D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/cutils/log.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/unistd.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/select.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/sysconf.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/capability.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/pathconf.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/SLES/OpenSLES.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/SLES/OpenSLES_Platform.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/SLES/OpenSLES_Android.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/SLES/OpenSLES_AndroidConfiguration.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/SLES/OpenSLES_AndroidMetadata.h \
- D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/SLES/OpenSLES.h \
- D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/AudioMixerController.cpp \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/AudioMixerController.h \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/utils/Errors.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/types.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/stdint.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/machine/wchar_limits.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs_elf.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/api-level.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/types.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/types.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/types.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/int-ll64.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/bitsperlong.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/bitsperlong.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/posix_types.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/stddef.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/compiler.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/posix_types.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/posix_types.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/sysmacros.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/errno.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/errno.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/errno.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/errno.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/errno-base.h \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/thread \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/mutex \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/condition_variable \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/atomic \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/vector \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/AudioMixer.h \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/AudioBufferProvider.h \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/AudioResamplerPublic.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/math.h \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/AudioResampler.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/log.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/system_properties.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/assert.h \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/audio.h \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/cutils/bitops.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/strings.h \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/Track.h \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/PcmData.h \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/IVolumeProvider.h \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/audio_utils/include/audio_utils/minifloat.h \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/PcmBufferProvider.h \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/OpenSLHelper.h \
+ H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/cutils/log.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/unistd.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/select.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/sysconf.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/pathconf.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/SLES/OpenSLES.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/SLES/OpenSLES_Platform.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/SLES/OpenSLES_Android.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/SLES/OpenSLES_AndroidConfiguration.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/SLES/OpenSLES_AndroidMetadata.h \
+ H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/SLES/OpenSLES.h \
+ H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/AudioMixerController.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/AudioMixerController.h:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/utils/Errors.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/utils/Errors.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/types.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/types.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/stdint.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/stdint.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/_types.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/machine/wchar_limits.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/_types.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/cdefs.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs_elf.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/cdefs_elf.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/api-level.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/android/api-level.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/types.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/posix_types.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/types.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/stddef.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/types.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/compiler.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/int-ll64.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/posix_types.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/bitsperlong.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/types.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/bitsperlong.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/types.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/posix_types.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/kernel.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/stddef.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/sysmacros.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/compiler.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/errno.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/posix_types.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/errno.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/posix_types.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/errno.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/sysmacros.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm-generic/errno.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/errno.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm-generic/errno-base.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/errno.h:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/thread:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/errno.h:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/mutex:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/errno.h:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/condition_variable:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/errno-base.h:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/atomic:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/thread:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/vector:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/mutex:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/AudioMixer.h:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/condition_variable:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/AudioBufferProvider.h:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/atomic:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/AudioResamplerPublic.h:
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/vector:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/math.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/AudioMixer.h:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/AudioResampler.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/AudioBufferProvider.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/android/log.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/AudioResamplerPublic.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/system_properties.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/math.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/assert.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/AudioResampler.h:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/audio.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/log.h:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/cutils/bitops.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/system_properties.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/strings.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/assert.h:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/Track.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/audio.h:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/PcmData.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/cutils/bitops.h:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/IVolumeProvider.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/strings.h:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/audio_utils/include/audio_utils/minifloat.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/Track.h:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/PcmBufferProvider.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/PcmData.h:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/OpenSLHelper.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/IVolumeProvider.h:
 
-D:/workspace/Poem/cocos2d/cocos/audio/android/../../audio/android/cutils/log.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/audio_utils/include/audio_utils/minifloat.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/unistd.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/PcmBufferProvider.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/select.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/OpenSLHelper.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/sysconf.h:
+H:/CocosProject/Poem/cocos2d/cocos/audio/android/../../audio/android/cutils/log.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/capability.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/unistd.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/pathconf.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/select.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/SLES/OpenSLES.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/sysconf.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/SLES/OpenSLES_Platform.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/pathconf.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/SLES/OpenSLES_Android.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/SLES/OpenSLES.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/SLES/OpenSLES_AndroidConfiguration.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/SLES/OpenSLES_Platform.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/SLES/OpenSLES_AndroidMetadata.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/SLES/OpenSLES_Android.h:
 
-D:/IDE/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/SLES/OpenSLES.h:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/SLES/OpenSLES_AndroidConfiguration.h:
 
-D:/IDE/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm:
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/SLES/OpenSLES_AndroidMetadata.h:
+
+H:/IDE/install/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/SLES/OpenSLES.h:
+
+H:/IDE/install/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm:

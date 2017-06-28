@@ -8,6 +8,7 @@ USING_NS_CC;
 class MainGame : public cocos2d::Layer
 {
 private:
+	float scaleFactor = 1.0f; // ui scale factor
 	int row = 4; // charactor rows 
 	int column = 5; // charactor columns
 	int level = 1; // poem level
