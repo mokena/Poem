@@ -44,7 +44,7 @@ void MainGame::initUI()
 
 	scaleFactor = MIN(visibleSize.width / designSize.width, visibleSize.height / designSize.height);
 	
-		// background
+	// background
 	auto bg = Sprite::create("bg.png");
 	bg->setAnchorPoint(Vec2(0, 0));
 	addChild(bg);
@@ -75,23 +75,24 @@ void MainGame::initUI()
 	chnStrings = Dictionary::createWithContentsOfFile("poem.xml");
 	const char* dstr = ((String*)chnStrings->objectForKey("app"))->getCString();
 	title = Label::create(dstr, "Arial", 40);
-	title->setPosition(Vec2(visibleSize.width / 2, origin.y + visibleSize.height - title->getContentSize().height));
+	title->setPosition(Vec2(origin.x + visibleSize.width / 2, 
+		origin.y + visibleSize.height - title->getContentSize().height));
 	addChild(title);
 
 	// author
 	author = Label::create(dstr, "Arial", 25);
-	author->setPosition(Vec2(visibleSize.width / 4, title->getPositionY() - title->getContentSize().height - author->getContentSize().height));
+	author->setPosition(Vec2(origin.x + visibleSize.width / 4, title->getPositionY() - title->getContentSize().height - author->getContentSize().height));
 	addChild(author);
 
 	// dynasty
 	dynasty = Label::create(dstr, "Arial", 25);
-	dynasty->setPosition(Vec2(visibleSize.width * 3 / 4, title->getPositionY() - title->getContentSize().height - dynasty->getContentSize().height));
+	dynasty->setPosition(Vec2(origin.x + visibleSize.width * 3 / 4, title->getPositionY() - title->getContentSize().height - dynasty->getContentSize().height));
 	addChild(dynasty);
 
 	// note area
 	const char* notestr = ((String*)chnStrings->objectForKey("need_note"))->getCString();
 	noteLbl = Label::create(notestr, "Arial", 30);
-	noteLbl->setPosition(Vec2(visibleSize.width / 2, dynasty->getPositionY() - dynasty->getContentSize().height - noteLbl->getContentSize().height));
+	noteLbl->setPosition(Vec2(origin.x + visibleSize.width / 2, dynasty->getPositionY() - dynasty->getContentSize().height - noteLbl->getContentSize().height));
 	addChild(noteLbl);
 
 	// add touch listener
@@ -103,12 +104,14 @@ void MainGame::initUI()
 	
 	// progress bar
 	auto progressBg = Sprite::create("progressBg.png");
-	progressBg->setPosition(Vec2(visibleSize.width / 2, 
+	progressBg->setScale(scaleFactor);
+	progressBg->setPosition(Vec2(origin.x + visibleSize.width / 2,
 		charactorsArea->getPositionY() + charactorsArea->getContentSize().height / 2 + charactorsArea->getContentSize().height / 10));
 	addChild(progressBg);
 
 	auto progressBar = Sprite::create("progressBar.png");
 	progressTimer = ProgressTimer::create(progressBar);
+	progressTimer->setScale(scaleFactor);
 	progressTimer->setType(ProgressTimer::Type::BAR);
 	progressTimer->setPosition(Vec2(visibleSize.width / 2, progressBg->getPositionY()));
 	progressTimer->setMidpoint(Vec2(0, 0));
@@ -162,9 +165,9 @@ void MainGame::initLevel()
 		addChild(charactor);
 		oriCharactors.pushBack(charactor);
 	}
-	Vec2 chaOrigin = Vec2(charactorsArea->getPositionX() - charactorsArea->getContentSize().width / 2,
-		charactorsArea->getPositionY() - charactorsArea->getContentSize().height / 2);
-	disturbCharactors(oriCharactors, chaOrigin, charactorsArea->getContentSize());
+	Vec2 chaOrigin = Vec2((charactorsArea->getPositionX() - charactorsArea->getContentSize().width / 2)*scaleFactor,
+		(charactorsArea->getPositionY() - charactorsArea->getContentSize().height / 2)*scaleFactor);
+	disturbCharactors(oriCharactors, chaOrigin, charactorsArea->getContentSize()*scaleFactor);
 }
 
 /*
