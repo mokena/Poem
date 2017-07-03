@@ -165,8 +165,8 @@ void MainGame::initLevel()
 		addChild(charactor);
 		oriCharactors.pushBack(charactor);
 	}
-	Vec2 chaOrigin = Vec2((charactorsArea->getPositionX() - charactorsArea->getContentSize().width / 2)*scaleFactor,
-		(charactorsArea->getPositionY() - charactorsArea->getContentSize().height / 2)*scaleFactor);
+	Vec2 chaOrigin = Vec2(charactorsArea->getPositionX() - charactorsArea->getContentSize().width / 2 * scaleFactor,
+		charactorsArea->getPositionY() - charactorsArea->getContentSize().height / 2*scaleFactor);
 	disturbCharactors(oriCharactors, chaOrigin, charactorsArea->getContentSize()*scaleFactor);
 }
 
@@ -236,7 +236,7 @@ void MainGame::disturbCharactors(Vector<Charactor*> src, Vec2 chaOrigin, Size si
 	int count = src.size();
 	int perWidth = size.width / column;
 	int perHeight = size.height / row;
-	int gap = 5;
+	int gap = 5 * scaleFactor;
 	for (int i = 0; i < count; i++) {
 		int index = CCRANDOM_0_1()*src.size();
 		disCharactors.pushBack(src.at(index));
