@@ -40,8 +40,12 @@ public:
 
 	bool onTouchBeganCharactor(Touch* touch, Event* event);
 
+	// disturb charactors randomly
 	void disturbCharactors(Vector<Charactor*> src, Vec2 origin, Size size);
     
+	// all level clear
+	void levelClear();
+
     // a selector callback
     void menuCloseCallback(cocos2d::Ref* pSender);
 

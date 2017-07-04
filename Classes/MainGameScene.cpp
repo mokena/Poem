@@ -156,6 +156,10 @@ void MainGame::initLevel()
 	std::string levels = StringUtils::format("level%d", level);
 	const char* levelStr = levels.c_str();
 	const char* cstr = ((String*)chnStrings->objectForKey(levelStr))->getCString();
+	if (cstr == NULL || cstr == "") {
+		// all level clear
+		
+	}
 	originalStr = StringUtils::toString(cstr);
 	Vector<Charactor*> oriCharactors; //charactors in the right order 
 
@@ -268,6 +272,13 @@ void MainGame::disturbCharactors(Vector<Charactor*> src, Vec2 chaOrigin, Size si
 		charactor->setPosition(Vec2(x, y));
 		src.erase(index);
 	}
+}
+
+/*	all level clear */
+void MainGame::levelClear()
+{
+	auto clearBg = Sprite::create();
+	addChild(clearBg);
 }
 
 
