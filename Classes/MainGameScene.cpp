@@ -124,6 +124,7 @@ void MainGame::initUI()
 
 void MainGame::initLevel()
 {
+	correctCount = 0;
 	progressTimer->setPercentage(0.0f);
 
 	auto visibleSize = Director::getInstance()->getVisibleSize();
@@ -184,9 +185,13 @@ bool MainGame::onTouchBeganCharactor(Touch * touch, Event * event)
 			charactor->setPicked();
 			bool picked = charactor->getPicked();
 			if (!picked) { // cancel picked charactor
-				selectedStr.erase(selectedStr.find_first_of(charactor->getString()), 3);
+				selectedStr.erase(selectedStr.find(charactor->getString()), 3);
 				selectedCharactors.eraseObject(charactor); // delete from the selected charactors
 				selectedCount--;
+				
+				// for test
+				noteLbl->setString(selectedStr.c_str());
+
 				log("selectedCount -- %d", selectedCount);
 			} else if (selectedCount < 4) { 
 				// picked one charactor but the number of picked charactors 
@@ -195,6 +200,10 @@ bool MainGame::onTouchBeganCharactor(Touch * touch, Event * event)
 				selectedCharactors.pushBack(charactor);
 				//log("touched character %s", charactor->getString());
 				selectedCount++;
+
+				// for test
+				noteLbl->setString(selectedStr.c_str());
+
 				log("selectedCount ++ %d", selectedCount);
 			}
 			else {
@@ -203,6 +212,10 @@ bool MainGame::onTouchBeganCharactor(Touch * touch, Event * event)
 				selectedCharactors.pushBack(charactor);
 				bool right = isCorrectPoem(selectedStr, originalStr);
 				selectedCount++;
+				
+				// for test
+				noteLbl->setString(selectedStr.c_str());
+				
 				log("you picked %d", right);
 				if (right) {
 					auto iterator = selectedCharactors.begin();
@@ -241,6 +254,10 @@ void MainGame::disturbCharactors(Vector<Charactor*> src, Vec2 chaOrigin, Size si
 	int perWidth = size.width / column;
 	int perHeight = size.height / row;
 	int gap = 5 * scaleFactor;
+	if (disCharactors.size() > 0) {
+		disCharactors.clear();
+	}
+	
 	for (int i = 0; i < count; i++) {
 		int index = CCRANDOM_0_1()*src.size();
 		disCharactors.pushBack(src.at(index));

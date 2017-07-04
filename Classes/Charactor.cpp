@@ -36,6 +36,9 @@ void Charactor::initWithString(char * text)
 	label->setPosition(getContentSize() / 2);
 	label->setTextColor(Color4B::GRAY);
 	addChild(label);
+
+	// picked
+	picked = false;
 }
 
 bool Charactor::getPicked()
