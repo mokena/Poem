@@ -50,7 +50,7 @@ void Charactor::setPicked()
 		label->setTextColor(Color4B::BLUE);
 	}
 	else {
-		label->setTextColor(Color4B::WHITE);
+		label->setTextColor(Color4B::GRAY);
 	}
 }
 

@@ -186,6 +186,8 @@ bool MainGame::onTouchBeganCharactor(Touch * touch, Event * event)
 			if (!picked) { // cancel picked charactor
 				selectedStr.erase(selectedStr.find_first_of(charactor->getString()), 3);
 				selectedCharactors.eraseObject(charactor); // delete from the selected charactors
+				selectedCount--;
+				log("selectedCount -- %d", selectedCount);
 			} else if (selectedCount < 4) { 
 				// picked one charactor but the number of picked charactors 
 				// is smaller than a sentence
@@ -193,12 +195,14 @@ bool MainGame::onTouchBeganCharactor(Touch * touch, Event * event)
 				selectedCharactors.pushBack(charactor);
 				//log("touched character %s", charactor->getString());
 				selectedCount++;
+				log("selectedCount ++ %d", selectedCount);
 			}
 			else {
 				// picked a whole sentence
 				selectedStr.append(charactor->getString());
 				selectedCharactors.pushBack(charactor);
 				bool right = isCorrectPoem(selectedStr, originalStr);
+				selectedCount++;
 				log("you picked %d", right);
 				if (right) {
 					auto iterator = selectedCharactors.begin();
