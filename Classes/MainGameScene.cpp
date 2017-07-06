@@ -43,6 +43,8 @@ void MainGame::initUI()
 	auto designSize = Director::getInstance()->getWinSize();
 
 	scaleFactor = MIN(visibleSize.width / designSize.width, visibleSize.height / designSize.height);
+
+	levelCleared = false;
 	
 	// background
 	auto bg = Sprite::create("bg.png");
@@ -135,7 +137,13 @@ void MainGame::initLevel()
 	// title
 	std::string ts = StringUtils::format("poem%d", level);
 	const char* titstr = ts.c_str();
-	const char* tstr = ((String*)chnStrings->objectForKey(titstr))->getCString();
+	String* tChnStr = (String*)chnStrings->objectForKey(titstr);
+	if (tChnStr == NULL) {
+		levelClear();
+		return;
+	}
+	const char* tstr = tChnStr->getCString();
+	
 	title->setString(tstr);
 
 	// author
@@ -180,6 +188,10 @@ void MainGame::initLevel()
 */
 bool MainGame::onTouchBeganCharactor(Touch * touch, Event * event)
 {
+	if (levelCleared) {
+		return false;
+	}
+
 	auto tpos = touch->getLocation();
 
 	for (int i = 0; i < disCharactors.size(); i++) {
@@ -194,7 +206,7 @@ bool MainGame::onTouchBeganCharactor(Touch * touch, Event * event)
 				selectedCount--;
 				
 				// for test
-				noteLbl->setString(selectedStr.c_str());
+				//noteLbl->setString(selectedStr.c_str());
 
 				log("selectedCount -- %d", selectedCount);
 			} else if (selectedCount < 4) { 
@@ -206,7 +218,7 @@ bool MainGame::onTouchBeganCharactor(Touch * touch, Event * event)
 				selectedCount++;
 
 				// for test
-				noteLbl->setString(selectedStr.c_str());
+				//noteLbl->setString(selectedStr.c_str());
 
 				log("selectedCount ++ %d", selectedCount);
 			}
@@ -218,7 +230,7 @@ bool MainGame::onTouchBeganCharactor(Touch * touch, Event * event)
 				selectedCount++;
 				
 				// for test
-				noteLbl->setString(selectedStr.c_str());
+				//noteLbl->setString(selectedStr.c_str());
 				
 				log("you picked %d", right);
 				if (right) {
@@ -277,7 +289,11 @@ void MainGame::disturbCharactors(Vector<Charactor*> src, Vec2 chaOrigin, Size si
 /*	all level clear */
 void MainGame::levelClear()
 {
-	auto clearBg = Sprite::create();
+	levelCleared = true;
+	auto visibleSize = Director::getInstance()->getVisibleSize();
+	Vec2 origin = Director::getInstance()->getVisibleOrigin();
+	auto clearBg = Sprite::create("levelClear.png");
+	clearBg->setPosition(Vec2(origin.x + visibleSize.width / 2, origin.y + visibleSize.height / 2));
 	addChild(clearBg);
 }
 
