@@ -237,11 +237,21 @@ bool MainGame::onTouchBeganCharactor(Touch * touch, Event * event)
 					auto iterator = selectedCharactors.begin();
 					while (iterator != selectedCharactors.end()) {
 						((Charactor*)(*iterator))->removeFromParent();
+						ParticleSystem* particleSystem = ParticleExplosion::createWithTotalParticles(20);
+						
+						particleSystem->setLife(0.2f);
+						auto startColor = Color4F(((Charactor*)(*iterator))->getColor());
+						particleSystem->setStartColor(startColor);
+						particleSystem->setEndColor(Color4F::WHITE);
+						particleSystem->setStartColorVar(Color4F(0, 0, 0, 1.0f));
+						particleSystem->setEndColorVar(Color4F(0, 0, 0, 0.1f));
+						particleSystem->setPosVar(Vec2(0.2f, 0.2f));
+						particleSystem->setPosition(((Charactor*)(*iterator))->getPosition());
+						particleSystem->setAutoRemoveOnFinish(true);
+						addChild(particleSystem);
 						iterator++;
 					}
-					CCParticleSystem* particleSystem = CCParticleExplosion::create();
-					//particleSystem->setTexture(CCTextureCache::sharedTextureCache()->addImage("stars.png"));
-					addChild(particleSystem);
+					
 					selectedCharactors.clear();
 					selectedCount = 0;
 					selectedStr.clear();
