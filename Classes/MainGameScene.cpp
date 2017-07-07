@@ -237,17 +237,20 @@ bool MainGame::onTouchBeganCharactor(Touch * touch, Event * event)
 					auto iterator = selectedCharactors.begin();
 					while (iterator != selectedCharactors.end()) {
 						((Charactor*)(*iterator))->removeFromParent();
-						ParticleSystem* particleSystem = ParticleExplosion::createWithTotalParticles(20);
-						
+						ParticleExplosion* particleSystem = ParticleExplosion::createWithTotalParticles(50);
+						particleSystem->setAnchorPoint(Vec2(0, 0));
 						particleSystem->setLife(0.2f);
 						auto startColor = Color4F(((Charactor*)(*iterator))->getColor());
-						particleSystem->setStartColor(startColor);
-						particleSystem->setEndColor(Color4F::WHITE);
+						particleSystem->setStartColor(Color4F::GREEN);
+						particleSystem->setEndColor(Color4F::GREEN);
 						particleSystem->setStartColorVar(Color4F(0, 0, 0, 1.0f));
 						particleSystem->setEndColorVar(Color4F(0, 0, 0, 0.1f));
-						particleSystem->setPosVar(Vec2(0.2f, 0.2f));
-						particleSystem->setPosition(((Charactor*)(*iterator))->getPosition());
+						auto chaPos = ((Charactor*)(*iterator))->getPosition();
+						auto chaContentSize = ((Charactor*)(*iterator))->getContentSize();
+						particleSystem->setPosition(Vec2(chaPos.x + chaContentSize.width/2, chaPos.y + chaContentSize.height/2));
 						particleSystem->setAutoRemoveOnFinish(true);
+						particleSystem->setSpeed(40);
+						particleSystem->setSpeedVar(20);
 						addChild(particleSystem);
 						iterator++;
 					}
