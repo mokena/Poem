@@ -115,7 +115,7 @@ void MainGame::initUI()
 	progressTimer = ProgressTimer::create(progressBar);
 	progressTimer->setScale(scaleFactor);
 	progressTimer->setType(ProgressTimer::Type::BAR);
-	progressTimer->setPosition(Vec2(visibleSize.width / 2, progressBg->getPositionY()));
+	progressTimer->setPosition(Vec2(origin.x + visibleSize.width / 2, progressBg->getPositionY()));
 	progressTimer->setMidpoint(Vec2(0, 0));
 	progressTimer->setBarChangeRate(Vec2(1, 0));
 	

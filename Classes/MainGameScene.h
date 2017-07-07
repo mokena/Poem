@@ -14,7 +14,7 @@ private:
 	int level = 1; // poem level
 	int correctCount = 0; // correct sentences user has selected
 	int selectedCount; // the count of user selected charactor
-	boolean levelCleared = false;
+	bool levelCleared = false;
 	
 	Dictionary* chnStrings; // string from xml
 	Vector<Charactor*> disCharactors; // charactors in the disturbed order
