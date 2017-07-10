@@ -47,6 +47,9 @@ public:
 	// all level clear
 	void levelClear();
 
+	// on key back pressed
+	virtual void onKeyReleased(EventKeyboard::KeyCode keyCode, Event* event);
+
     // a selector callback
     void menuCloseCallback(cocos2d::Ref* pSender);
 

@@ -26,5 +26,16 @@
     <key>note2</key> 
     <string>早已空虚冷寞的古行宫，零落宫花依然开行艳红。有几个满头白发的宫女，闲坐谈论当年的唐玄宗。</string>
     
+    <key>poem3</key>
+		<string>新嫁娘词</string>
+		<key>author3</key>
+		<string>【作者】王建</string>
+		<key>dynasty1</key>
+		<string>【朝代】唐</string>
+    <key>level3</key>  
+    <string>三日入厨下洗手作羹汤未谙姑食性先遣小姑尝</string>  
+    <key>note3</key> 
+    <string>新婚三天来到厨房，洗手亲自来作羹汤。不知婆婆什么口味，做好先让小姑品尝。</string>
+    
     
 </dict>  
