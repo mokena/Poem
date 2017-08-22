@@ -1,5 +1,4 @@
 cocos2d/
-proj.android/
 proj.android-studio/
 proj.ios_mac/
 proj.linux/
@@ -7,6 +6,7 @@ proj.win8.1-universal/
 proj.win10/
 proj.win32/
 proj.tizen/
+proj.android/gen/
 proj.android/obj/
 proj.android/bin/
 .cocos-project.json
