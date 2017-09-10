@@ -15,18 +15,32 @@
         <!-- Tell Cocos2dxActivity the name of our .so -->
         <meta-data android:name="android.app.lib_name"
                    android:value="MyGame" />
+        
+        <!-- limei ads start { -->
+        <meta-data android:name="com.google.android.gms.version"
+				   android:value="6111000" />
+        <activity android:name="org.cocos2dx.cpp.AdActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- limei ads end } -->
 
         <activity android:name="org.cocos2dx.cpp.AppActivity"
                   android:label="@string/app_name"
                   android:screenOrientation="portrait"
                   android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
                   android:configChanges="orientation|keyboardHidden|screenSize">
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            
         </activity>
+        
+        <!-- limei ads start { -->
+        <activity android:name="cn.immob.sdk.BrowserActivity"></activity>
+		<activity android:name="cn.immob.sdk.util.LMActionHandler"></activity>
+		<service android:name="cn.immob.sdk.net.DownloadService"></service>
+		<service android:name="cn.immob.sdk.service.GetLocationService"></service>
+        <!-- limei ads end } -->
         
     </application>
 
@@ -37,4 +51,17 @@
                       android:xlargeScreens="true"/>
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    
+    <!-- limei ads start { -->
+	<!-- 读取手机状态的权限,如果没有添加这个权限将影响到你的收入 -->
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<!-- 操作SD 卡的权限,如果没有添加这个权限有可能会影响广告展示,以及影响积分墙广告收入 -->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<!-- 读取网络状态的权限,如果没有这个权限广告将不能正常加载 -->
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<!-- 读取wifi 网络状态的权限，加载广告时优先使用wifi 状态下的网络 -->
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<!-- 位置权限将使设备可以接收地理位置相关的广告 -->
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- limei ads end } -->
 </manifest> 
