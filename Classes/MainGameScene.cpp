@@ -1,5 +1,6 @@
 ﻿#include "MainGameScene.h"
 #include "SimpleAudioEngine.h"
+#include "YoumiAd.h"
 
 Scene* MainGame::createScene()
 {
@@ -30,7 +31,10 @@ bool MainGame::init()
 	selectedCount = 0;
 
 	// initial the UI layout
-	initUI();
+	//initUI();
+
+	// show ads
+	YoumiAd::showSpotAd();
 
 	auto keyboardListener = EventListenerKeyboard::create();
 	keyboardListener->onKeyReleased = CC_CALLBACK_2(MainGame::onKeyReleased, this);
@@ -331,7 +335,10 @@ void MainGame::onKeyReleased(EventKeyboard::KeyCode keyCode, Event * event)
 
 void MainGame::menuCloseCallback(Ref* pSender)
 {
-    //Close the cocos2d-x game scene and quit the application
+    // exit ads
+	YoumiAd::exitApp();
+
+	//Close the cocos2d-x game scene and quit the application
     Director::getInstance()->end();
 
     #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
