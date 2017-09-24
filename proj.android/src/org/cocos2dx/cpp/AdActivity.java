@@ -73,6 +73,7 @@ public class AdActivity extends Activity {
 					
 					Intent intent = new Intent(AdActivity.this, AppActivity.class);
 		            AdActivity.this.startActivity(intent);
+		            AdActivity.this.finish();
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();

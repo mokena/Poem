@@ -37,5 +37,70 @@
     <key>note3</key> 
     <string>新婚三天来到厨房，洗手亲自来作羹汤。不知婆婆什么口味，做好先让小姑品尝。</string>
     
+    <key>poem4</key>
+		<string>杂诗三首·其二</string>
+		<key>author4</key>
+		<string>【作者】王维</string>
+		<key>dynasty4</key>
+		<string>【朝代】唐</string>
+    <key>level4</key>  
+    <string>君自故乡来应知故乡事来日绮窗前寒梅著花未</string>  
+    <key>note4</key> 
+    <string>您是刚从我们家乡来的，一定了解家乡的人情世态。请问您来的时候我家雕画花纹的窗户前，那一株腊梅花开了没有？</string>
+    
+    <key>poem5</key>
+		<string>竹里馆</string>
+		<key>author5</key>
+		<string>【作者】王维</string>
+		<key>dynasty5</key>
+		<string>【朝代】唐</string>
+    <key>level5</key>  
+    <string>独坐幽篁里弹琴复长啸深林人不知明月来相照</string>  
+    <key>note5</key> 
+    <string>独自闲坐幽静竹林，时而弹琴时而长啸。密林之中何人知晓我在这里？只有一轮明月静静与我相伴。</string>
+    
+    <key>poem6</key>
+		<string>山中送别</string>
+		<key>author6</key>
+		<string>【作者】王维</string>
+		<key>dynasty6</key>
+		<string>【朝代】唐</string>
+    <key>level6</key>  
+    <string>山中相送罢日暮掩柴扉春草明年绿王孙归不归？</string>  
+    <key>note6</key> 
+    <string>在深山中送走了好友，夕阳落下把柴门半掩。春草到明年催生新绿，朋友啊你能不能回还？ </string>
+    
+    <key>poem7</key>
+		<string>问刘十九</string>
+		<key>author7</key>
+		<string>【作者】白居易</string>
+		<key>dynasty7</key>
+		<string>【朝代】唐</string>
+    <key>level7</key>  
+    <string>绿蚁新醅酒红泥小火炉晚来天欲雪能饮一杯无</string>  
+    <key>note7</key> 
+    <string>新酿的米酒，色绿香浓；小小红泥炉，烧得殷红。天快黑了，大雪将要来。能否共饮一杯？朋友！</string>
+    
+    <key>poem8</key>
+		<string>哥舒歌</string>
+		<key>author8</key>
+		<string>【作者】西鄙人</string>
+		<key>dynasty8</key>
+		<string>【朝代】唐</string>
+    <key>level8</key>  
+    <string>北斗七星高哥舒夜带刀至今窥牧马不敢过临洮</string>  
+    <key>note8</key> 
+    <string>黑夜里北斗七星挂得高高，哥舒翰勇猛守边夜带宝刀。吐蕃族至今牧马只敢远望，他们再不敢南来越过临洮。</string>
+    
+    <key>poem9</key>
+		<string>怨情</string>
+		<key>author9</key>
+		<string>【作者】李白</string>
+		<key>dynasty9</key>
+		<string>【朝代】唐</string>
+    <key>level9</key>  
+    <string>美人卷珠帘深坐颦蛾眉但见泪痕湿不知心恨谁</string>  
+    <key>note9</key> 
+    <string>美人儿卷起珠帘一直等待，一直坐着把双眉紧紧锁闭。只看见她泪痕湿满了两腮，不知道她是恨人还是恨己。</string>
     
 </dict>  
