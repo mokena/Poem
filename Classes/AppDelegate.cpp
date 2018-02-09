@@ -1,6 +1,9 @@
 #include "AppDelegate.h"
 #include "MainGameScene.h"
 
+#include "AgentManager.h"
+using namespace anysdk::framework;
+
 USING_NS_CC;
 
 static cocos2d::Size designResolutionSize = cocos2d::Size(640, 960);
@@ -71,6 +74,12 @@ bool AppDelegate::applicationDidFinishLaunching() {
     //{        
     //    director->setContentScaleFactor(MIN(smallResolutionSize.height/designResolutionSize.height, smallResolutionSize.width/designResolutionSize.width));
     //}
+
+    std::string appKey = "151BEEEA-C1D6-8FEC-F7EE-01B9D4D806CE";
+    std::string appSecret = "02cab009c507e301d2d6c363502cabfb";
+    std::string privateKey = "E0601CDE2E245675E8C57F4DC6B2D746";
+    std::string oauthLoginServer = "http://oauth.anysdk.com/api/OauthLoginDemo/Login.php";
+    AgentManager::getInstance()->init(appKey,appSecret,privateKey,oauthLoginServer);
 
     register_all_packages();
 
