@@ -1,5 +1,6 @@
 #include "HelloWorldScene.h"
-#include "SimpleAudioEngine.h"
+//#include "SimpleAudioEngine.h"
+#include "PluginChannel.h"
 
 USING_NS_CC;
 
@@ -62,6 +63,8 @@ bool HelloWorld::init()
 
     // add the sprite as a child to this layer
     this->addChild(sprite, 0);
+
+    PluginChannel::getInstance()->showAds();
     
     return true;
 }
@@ -83,3 +86,6 @@ void HelloWorld::menuCloseCallback(Ref* pSender)
     
     
 }
+
+
+

@@ -1,7 +1,7 @@
 #include "AppDelegate.h"
 #include "MainGameScene.h"
+#include "PluginChannel.h"
 
-#include "AgentManager.h"
 using namespace anysdk::framework;
 
 USING_NS_CC;
@@ -75,11 +75,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     //    director->setContentScaleFactor(MIN(smallResolutionSize.height/designResolutionSize.height, smallResolutionSize.width/designResolutionSize.width));
     //}
 
-    std::string appKey = "151BEEEA-C1D6-8FEC-F7EE-01B9D4D806CE";
-    std::string appSecret = "02cab009c507e301d2d6c363502cabfb";
-    std::string privateKey = "E0601CDE2E245675E8C57F4DC6B2D746";
-    std::string oauthLoginServer = "http://oauth.anysdk.com/api/OauthLoginDemo/Login.php";
-    AgentManager::getInstance()->init(appKey,appSecret,privateKey,oauthLoginServer);
+    PluginChannel::getInstance()->loadPlugins();
 
     register_all_packages();
 
@@ -107,3 +103,19 @@ void AppDelegate::applicationWillEnterForeground() {
     // if you use SimpleAudioEngine, it must resume here
     // SimpleAudioEngine::getInstance()->resumeBackgroundMusic();
 }
+
+/*
+
+*/
+
+/*
+void AppDelegate::preloadAds()
+{
+    ProtocolAds* ads = AgentManager::getInstance()->getAdsPlugin();
+
+    if( ads && ads->isAdTypeSupported(AD_TYPE_FULLSCREEN) )
+    {
+        ads->preloadAds(AD_TYPE_FULLSCREEN);
+    }
+}
+ */
