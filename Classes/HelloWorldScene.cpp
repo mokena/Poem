@@ -18,7 +18,9 @@ bool HelloWorld::init()
     {
         return false;
     }
-    
+
+    PluginChannel::getInstance()->preloadAds();
+
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
