@@ -13,8 +13,8 @@ public:
     YoumiAd();
     virtual ~YoumiAd();
 
-    // ²åÆÁ¹ã¸æÊ¹ÓÃ
-    static void showSpotAd();           //Í¨¹ýJNIµ÷ÓÃJAVA¾²Ì¬º¯Êý£¬ÊµÏÖÕ¹Ê¾²åÆÁ¹ã¸æ
-    static bool hideSpotAd();          //Í¨¹ýJNIµ÷ÓÃJAVA¾²Ì¬º¯Êý£¬ÊµÏÖÒþ²Ø²åÆÁ¹ã¸æ
-    static void exitApp();                //Í¨¹ýJNIµ÷ÓÃJAVA¾²Ì¬º¯Êý£¬ÊµÏÖÍË³öÓ¦ÓÃ
+    // æ’å±å¹¿å‘Šä½¿ç”¨
+    static void showSpotAd();           //é€šè¿‡JNIè°ƒç”¨JAVAé™æ€å‡½æ•°ï¼Œå®žçŽ°å±•ç¤ºæ’å±å¹¿å‘Š
+    static bool hideSpotAd();          //é€šè¿‡JNIè°ƒç”¨JAVAé™æ€å‡½æ•°ï¼Œå®žçŽ°éšè—æ’å±å¹¿å‘Š
+    static void exitApp();                //é€šè¿‡JNIè°ƒç”¨JAVAé™æ€å‡½æ•°ï¼Œå®žçŽ°é€€å‡ºåº”ç”¨
 };

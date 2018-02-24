@@ -31,10 +31,9 @@ bool MainGame::init()
 	selectedCount = 0;
 
 	// initial the UI layout
-	//initUI();
+	initUI();
 
-	// show ads
-	YoumiAd::showSpotAd();
+
 
 	auto keyboardListener = EventListenerKeyboard::create();
 	keyboardListener->onKeyReleased = CC_CALLBACK_2(MainGame::onKeyReleased, this);
@@ -238,7 +237,10 @@ bool MainGame::onTouchBeganCharactor(Touch * touch, Event * event)
 				selectedCharactors.pushBack(charactor);
 				bool right = isCorrectPoem(selectedStr, originalStr);
 				selectedCount++;
-				
+
+				// show ads
+				YoumiAd::showSpotAd();
+
 				// for test
 				//noteLbl->setString(selectedStr.c_str());
 				

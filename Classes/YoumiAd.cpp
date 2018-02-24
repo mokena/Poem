@@ -4,70 +4,71 @@ YoumiAd::YoumiAd(){}
 YoumiAd::~YoumiAd(){}
 
 /**
- * Õ¹Ê¾²åÆÁ¹ã¸æ£¨C++ Í¨¹ýJNI µ÷ÓÃJAVA·½·¨£©
+ * å±•ç¤ºæ’å±å¹¿å‘Šï¼ˆC++ é€šè¿‡JNI è°ƒç”¨JAVAæ–¹æ³•ï¼‰
  */
 void YoumiAd::showSpotAd()
 {
-    #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) //ÅÐ¶Ïµ±Ç°ÊÇ·ñÎªAndroidÆ½Ì¨
+    log("YoumiAd::showSpotAd");
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) //åˆ¤æ–­å½“å‰æ˜¯å¦ä¸ºAndroidå¹³å°
 
-    // ¶¨ÒåJNIº¯ÊýÐÅÏ¢½á¹¹Ìå
+    // å®šä¹‰JNIå‡½æ•°ä¿¡æ¯ç»“æž„ä½“
     JniMethodInfo showSpotAd;
 
     /**
-     * @param µÚÒ»¸ö²ÎÊý£ºJNIº¯ÊýÐÅÏ¢½á¹¹Ìå
-     * @param µÚ¶þ¸ö²ÎÊý£ºÓëÄãAndroidÏîÄ¿ÖÐµÄÖ÷ActivityËùÔÚµÄ°üÃû¶ÔÓ¦£¬DemoÖÐÎª£ºcom.youmi.android.cocos2dx.demo.MainActivity£¬ÐèÒª¸ÄÎªcom/youmi/android/cocos2dx/denmo/MainActivity
-     * @param µÚÈý¸ö²ÎÊý£ºAndroidÏîÄ¿ÖÐ¶ÔÓ¦µÄActivityÀïÃæËù¶¨ÒåµÄJAVA¾²Ì¬º¯ÊýÃû£¬DemoÖÐÎª£ºshowSpotAd
-     * @param µÚËÄ¸ö²ÎÊý£º¸ÃJAVA·½·¨ËùÐèÒª´«ÈëµÄÖµ£¬¸ñÊ½Îª"(JAVA·½·¨ÖÐÐèÒª´«ÈëµÄÖµ)c++ÖÐ±¾º¯Êý·µ»ØÖµ"£¬DemoÖÐ£¬showSpotAdµÄJAVA·½·¨²»ÐèÒª´«ÈëÖµ£¬¶øYoumiAd::showSpotAd()·µ»ØÖµÎªvoid£¬ËùÒÔÕâÀïÐ´ "()V"
-     * @return ·µ»ØboolÖµ±íÊ¾ÊÇ·ñÕÒµ½¾²Ì¬º¯Êý
+     * @param ç¬¬ä¸€ä¸ªå‚æ•°ï¼šJNIå‡½æ•°ä¿¡æ¯ç»“æž„ä½“
+     * @param ç¬¬äºŒä¸ªå‚æ•°ï¼šä¸Žä½ Androidé¡¹ç›®ä¸­çš„ä¸»Activityæ‰€åœ¨çš„åŒ…åå¯¹åº”ï¼ŒDemoä¸­ä¸ºï¼šcom.youmi.android.cocos2dx.demo.MainActivityï¼Œéœ€è¦æ”¹ä¸ºcom/youmi/android/cocos2dx/denmo/MainActivity
+     * @param ç¬¬ä¸‰ä¸ªå‚æ•°ï¼šAndroidé¡¹ç›®ä¸­å¯¹åº”çš„Activityé‡Œé¢æ‰€å®šä¹‰çš„JAVAé™æ€å‡½æ•°åï¼ŒDemoä¸­ä¸ºï¼šshowSpotAd
+     * @param ç¬¬å››ä¸ªå‚æ•°ï¼šè¯¥JAVAæ–¹æ³•æ‰€éœ€è¦ä¼ å…¥çš„å€¼ï¼Œæ ¼å¼ä¸º"(JAVAæ–¹æ³•ä¸­éœ€è¦ä¼ å…¥çš„å€¼)c++ä¸­æœ¬å‡½æ•°è¿”å›žå€¼"ï¼ŒDemoä¸­ï¼ŒshowSpotAdçš„JAVAæ–¹æ³•ä¸éœ€è¦ä¼ å…¥å€¼ï¼Œè€ŒYoumiAd::showSpotAd()è¿”å›žå€¼ä¸ºvoidï¼Œæ‰€ä»¥è¿™é‡Œå†™ "()V"
+     * @return è¿”å›žboolå€¼è¡¨ç¤ºæ˜¯å¦æ‰¾åˆ°é™æ€å‡½æ•°
      */
-    bool isHave = JniHelper::getStaticMethodInfo(showSpotAd, "com/youmi/android/cocos2dx/demo/MainActivity", "showSpotAd", "()V");
-
+    bool isHave = JniHelper::getStaticMethodInfo(showSpotAd, "org/cocos2dx/cpp/MainActivity", "showSpotAd", "()V");
+    log("YoumiAd::showSpotAd: android");
     if (!isHave) {
-        log("jni:showSpotAdº¯Êý²»´æÔÚ");
+        log("jni:showSpotAdå‡½æ•°ä¸å­˜åœ¨");
     } else {
-        log("jni:showSpotAdº¯Êý´æÔÚ");
+        log("jni:showSpotAdå‡½æ•°å­˜åœ¨");
         showSpotAd.env->CallStaticVoidMethod(showSpotAd.classID, showSpotAd.methodID);
     }
-    #endif
+#endif
 }
 
 /**
- * Òþ²Ø²åÆÁ¹ã¸æ£¨C++ Í¨¹ýJNI µ÷ÓÃJAVA·½·¨£©
+ * éšè—æ’å±å¹¿å‘Šï¼ˆC++ é€šè¿‡JNI è°ƒç”¨JAVAæ–¹æ³•ï¼‰
  */
 bool YoumiAd::hideSpotAd()
 {
-    #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) //ÅÐ¶Ïµ±Ç°ÊÇ·ñÎªAndroidÆ½Ì¨
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) //åˆ¤æ–­å½“å‰æ˜¯å¦ä¸ºAndroidå¹³å°
 
     JniMethodInfo hideSpotAd;
 
     bool isHave = JniHelper::getStaticMethodInfo(hideSpotAd, "com/youmi/android/cocos2dx/demo/MainActivity", "hideSpotAd", "()Z");
 
     if (!isHave) {
-        log("jni:hideSpotAdº¯Êý²»´æÔÚ");
+        log("jni:hideSpotAdå‡½æ•°ä¸å­˜åœ¨");
         return false;
     } else {
-        log("jni:hideSpotAdº¯Êý´æÔÚ");
+        log("jni:hideSpotAdå‡½æ•°å­˜åœ¨");
         return hideSpotAd.env->CallStaticBooleanMethod(hideSpotAd.classID, hideSpotAd.methodID);
     }
-    #endif
+#endif
 }
 
 /**
- * ÍË³öÓ¦ÓÃ £¨C++ Í¨¹ýJNI µ÷ÓÃJAVA·½·¨£©
+ * é€€å‡ºåº”ç”¨ ï¼ˆC++ é€šè¿‡JNI è°ƒç”¨JAVAæ–¹æ³•ï¼‰
  */
 void YoumiAd::exitApp()
 {
-    #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) //ÅÐ¶Ïµ±Ç°ÊÇ·ñÎªAndroidÆ½Ì¨
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) //åˆ¤æ–­å½“å‰æ˜¯å¦ä¸ºAndroidå¹³å°
 
     JniMethodInfo exitApp;
 
     bool isHave = JniHelper::getStaticMethodInfo(exitApp, "com/youmi/android/cocos2dx/demo/MainActivity", "exitApp", "()V");
 
     if (!isHave) {
-        log("jni:exitAppº¯Êý²»´æÔÚ");
+        log("jni:exitAppå‡½æ•°ä¸å­˜åœ¨");
     } else {
-        log("jni:exitAppº¯Êý´æÔÚ");
+        log("jni:exitAppå‡½æ•°å­˜åœ¨");
         exitApp.env->CallStaticVoidMethod(exitApp.classID, exitApp.methodID);
     }
-    #endif
+#endif
 }
