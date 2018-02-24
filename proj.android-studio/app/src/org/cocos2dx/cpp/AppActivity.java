@@ -26,6 +26,7 @@ package org.cocos2dx.cpp;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.util.Log;
 import android.widget.Toast;
 
 import net.youmi.android.AdManager;
@@ -55,7 +56,7 @@ public class AppActivity extends Cocos2dxActivity {
 
     private void initSDK() {
         // 初始化接口，应用启动的时候调用，参数：appId, appSecret, 是否开启调试模式, 是否开启有米日志
-        AdManager.getInstance(this).init("c845d0d4fa076f16", "ae816683da281fa6", false, false);
+        AdManager.getInstance(this).init("c845d0d4fa076f16", "ae816683da281fa6", true, true);
     }
 
     /**
@@ -105,9 +106,11 @@ public class AppActivity extends Cocos2dxActivity {
                 super.handleMessage(msg);
                 switch (msg.what) {
                     case SHOW_SPOT_AD:
+                        Log.i("POEM", "SHOW_SPOT_AD");
                         internalShowSpotAd();
                         break;
                     case HIDE_SPOT_AD:
+                        Log.i("POEM", "HIDE_SPOT_AD");
                         internalHideSpotAd();
                         break;
                     default:
@@ -121,6 +124,7 @@ public class AppActivity extends Cocos2dxActivity {
      * 展示插屏广告（这个方法在后续步骤中将会被C++通过JNI调用）
      */
     public static void showSpotAd() {
+        Log.i("POEM", "showSpotAd");
         Message msg = sHandler.obtainMessage();
         msg.what = SHOW_SPOT_AD;
         msg.sendToTarget();
@@ -159,9 +163,11 @@ public class AppActivity extends Cocos2dxActivity {
      * 展示插屏广告
      */
     private void internalShowSpotAd() {
+        Log.i("POEM", "internalShowSpotAd");
         SpotManager.getInstance(getContext()).showSpot(getContext(), new SpotListener() {
             @Override
             public void onShowSuccess() {
+                Log.i("POEM", "插屏展示成功");
                 Toast.makeText(AppActivity.this, "插屏展示成功", Toast.LENGTH_SHORT).show();
             }
 
@@ -169,21 +175,27 @@ public class AppActivity extends Cocos2dxActivity {
             public void onShowFailed(int errorCode) {
                 switch (errorCode) {
                     case ErrorCode.NON_NETWORK:
+                        Log.i("POEM", "插屏展示失败 - 网络异常");
                         Toast.makeText(AppActivity.this, "插屏展示失败 - 网络异常", Toast.LENGTH_LONG).show();
                         break;
                     case ErrorCode.NON_AD:
+                        Log.i("POEM", "插屏展示失败 - 暂无插屏广告");
                         Toast.makeText(AppActivity.this, "插屏展示失败 - 暂无插屏广告", Toast.LENGTH_LONG).show();
                         break;
                     case ErrorCode.RESOURCE_NOT_READY:
+                        Log.i("POEM", "插屏展示失败 - 插屏资源还没准备好");
                         Toast.makeText(AppActivity.this, "插屏展示失败 - 插屏资源还没准备好", Toast.LENGTH_LONG).show();
                         break;
                     case ErrorCode.SHOW_INTERVAL_LIMITED:
+                        Log.i("POEM", "插屏展示失败 - 请勿频繁展示");
                         Toast.makeText(AppActivity.this, "插屏展示失败 - 请勿频繁展示", Toast.LENGTH_LONG).show();
                         break;
                     case ErrorCode.WIDGET_NOT_IN_VISIBILITY_STATE:
+                        Log.i("POEM", "插屏展示失败 - 请设置插屏为可见状态");
                         Toast.makeText(AppActivity.this, "插屏展示失败 - 请设置插屏为可见状态", Toast.LENGTH_LONG).show();
                         break;
                     default:
+                        Log.i("POEM", "插屏展示失败 - 请稍后再试");
                         Toast.makeText(AppActivity.this, "插屏展示失败 - 请稍后再试", Toast.LENGTH_LONG).show();
                         break;
                 }
@@ -191,11 +203,13 @@ public class AppActivity extends Cocos2dxActivity {
 
             @Override
             public void onSpotClosed() {
+                Log.i("POEM", "插屏被关闭");
                 Toast.makeText(AppActivity.this, "插屏被关闭", Toast.LENGTH_LONG).show();
             }
 
             @Override
             public void onSpotClicked(boolean isWebPage) {
+                Log.i("POEM", "插屏被点击");
                 Toast.makeText(AppActivity.this, "插屏被点击", Toast.LENGTH_LONG).show();
             }
         });

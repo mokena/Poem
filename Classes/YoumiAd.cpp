@@ -21,7 +21,7 @@ void YoumiAd::showSpotAd()
      * @param 第四个参数：该JAVA方法所需要传入的值，格式为"(JAVA方法中需要传入的值)c++中本函数返回值"，Demo中，showSpotAd的JAVA方法不需要传入值，而YoumiAd::showSpotAd()返回值为void，所以这里写 "()V"
      * @return 返回bool值表示是否找到静态函数
      */
-    bool isHave = JniHelper::getStaticMethodInfo(showSpotAd, "org/cocos2dx/cpp/MainActivity", "showSpotAd", "()V");
+    bool isHave = JniHelper::getStaticMethodInfo(showSpotAd, "org/cocos2dx/cpp/AppActivity", "showSpotAd", "()V");
     log("YoumiAd::showSpotAd: android");
     if (!isHave) {
         log("jni:showSpotAd函数不存在");

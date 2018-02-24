@@ -13,10 +13,6 @@ android {
         versionCode 1
         versionName "1.0"
 
-        ndk {
-            abiFilters 'armeabi-v7a'
-        }
-
         externalNativeBuild {
             ndkBuild {
                 if (!project.hasProperty("PROP_NDK_MODE") || PROP_NDK_MODE.compareTo('none') != 0) {
@@ -49,7 +45,6 @@ android {
         res.srcDir "res"
         manifest.srcFile "AndroidManifest.xml"
         assets.srcDir "../../Resources"
-        jni.srcDir "jni代码路径"
     }
 
     externalNativeBuild {
