@@ -14,7 +14,7 @@ public:
     virtual ~YoumiAd();
 
     // 插屏广告使用
-    static void showSpotAd();           //通过JNI调用JAVA静态函数，实现展示插屏广告
-    static bool hideSpotAd();          //通过JNI调用JAVA静态函数，实现隐藏插屏广告
+    static void showBannerAd();           //通过JNI调用JAVA静态函数，实现展示插屏广告
+    static bool hideBannerAd();          //通过JNI调用JAVA静态函数，实现隐藏插屏广告
     static void exitApp();                //通过JNI调用JAVA静态函数，实现退出应用
 };
