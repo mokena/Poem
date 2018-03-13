@@ -45,6 +45,9 @@ public:
 	void disturbCharactors(Vector<Charactor*> src, Vec2 origin, Size size);
     
 	// all level clear
+	void allLevelClear();
+
+	// one level cleaned
 	void levelClear();
 
 	// on key back pressed

@@ -2,6 +2,8 @@
 #include "SimpleAudioEngine.h"
 #include "YoumiAd.h"
 
+static const char* CUR_LEVEL="cur_level";
+
 Scene* MainGame::createScene()
 {
     // 'scene' is an autorelease object
@@ -33,7 +35,9 @@ bool MainGame::init()
 	// initial the UI layout
 	initUI();
 
-
+    // initialize level
+    level = UserDefault::getInstance()->getIntegerForKey(CUR_LEVEL);
+    level = (level == 0) ? 1 : level;
 
 	auto keyboardListener = EventListenerKeyboard::create();
 	keyboardListener->onKeyReleased = CC_CALLBACK_2(MainGame::onKeyReleased, this);
@@ -142,13 +146,15 @@ void MainGame::initLevel()
 	Vec2 origin = Director::getInstance()->getVisibleOrigin();
 	chnStrings = Dictionary::createWithContentsOfFile("poem.xml");
 
+    log("level is %d", level);
+
 	// info area
 	// title
 	std::string ts = StringUtils::format("poem%d", level);
 	const char* titstr = ts.c_str();
 	String* tChnStr = (String*)chnStrings->objectForKey(titstr);
 	if (tChnStr == NULL) {
-		levelClear();
+		allLevelClear();
 		return;
 	}
 	const char* tstr = tChnStr->getCString();
@@ -238,9 +244,6 @@ bool MainGame::onTouchBeganCharactor(Touch * touch, Event * event)
 				bool right = isCorrectPoem(selectedStr, originalStr);
 				selectedCount++;
 
-				// show ads
-				YoumiAd::showSpotAd();
-
 				// for test
 				//noteLbl->setString(selectedStr.c_str());
 				
@@ -274,8 +277,8 @@ bool MainGame::onTouchBeganCharactor(Touch * touch, Event * event)
 				
 				// if this stage is cleaned
 				if (progressTimer->getPercentage() == 100) {
-					level++;
-					initLevel();
+					levelClear();
+
 				}
 			}
 			
@@ -312,7 +315,7 @@ void MainGame::disturbCharactors(Vector<Charactor*> src, Vec2 chaOrigin, Size si
 }
 
 /*	all level clear */
-void MainGame::levelClear()
+void MainGame::allLevelClear()
 {
 	levelCleared = true;
 	auto visibleSize = Director::getInstance()->getVisibleSize();
@@ -320,6 +323,23 @@ void MainGame::levelClear()
 	auto clearBg = Sprite::create("levelClear.png");
 	clearBg->setPosition(Vec2(origin.x + visibleSize.width / 2, origin.y + visibleSize.height / 2));
 	addChild(clearBg);
+}
+
+/* one level clear */
+void MainGame::levelClear()
+{
+	level++;
+	initLevel();
+
+	// show ads
+	int randN = CCRANDOM_0_1()*3 + 4;
+	if(level % randN == 0)
+	{
+		YoumiAd::showSpotAd();
+	}
+
+	// write current level to storage
+	UserDefault::getInstance()->setIntegerForKey(CUR_LEVEL, level);
 }
 
 void MainGame::onKeyReleased(EventKeyboard::KeyCode keyCode, Event * event)

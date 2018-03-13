@@ -46,7 +46,7 @@
     <key>level4</key>  
     <string>君自故乡来应知故乡事来日绮窗前寒梅著花未</string>  
     <key>note4</key> 
-    <string>您是刚从我们家乡来的，一定了解家乡的人情世态。请问您来的时候我家雕画花纹的窗户前，那一株腊梅花开了没有？</string>
+    <string>您是刚从我们家乡来的，一定了解家乡的人情世态。请问您来的时候我家雕画花纹的窗户前，那一株腊梅花开了没有</string>
     
     <key>poem5</key>
 		<string>竹里馆</string>
@@ -66,7 +66,7 @@
 		<key>dynasty6</key>
 		<string>【朝代】唐</string>
     <key>level6</key>  
-    <string>山中相送罢日暮掩柴扉春草明年绿王孙归不归</string>  
+    <string>山中相送罢日暮掩柴扉春草明年绿王孙归不归？</string>  
     <key>note6</key> 
     <string>在深山中送走了好友，夕阳落下把柴门半掩。春草到明年催生新绿，朋友啊你能不能回还？ </string>
     
