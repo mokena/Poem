@@ -98,4 +98,5 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile project(':libcocos2dx')
     implementation files('jniLibs/YoumiSdk_v7.0.1_2017-01-06.jar')
+    implementation files('jniLibs/android-support-v4.jar')
 }

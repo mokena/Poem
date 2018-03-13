@@ -239,7 +239,7 @@ bool MainGame::onTouchBeganCharactor(Touch * touch, Event * event)
 				selectedCount++;
 
 				// show ads
-				YoumiAd::showBannerAd();
+				YoumiAd::showSpotAd();
 
 				// for test
 				//noteLbl->setString(selectedStr.c_str());

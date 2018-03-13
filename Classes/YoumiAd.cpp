@@ -6,13 +6,13 @@ YoumiAd::~YoumiAd(){}
 /**
  * 展示插屏广告（C++ 通过JNI 调用JAVA方法）
  */
-void YoumiAd::showBannerAd()
+void YoumiAd::showSpotAd()
 {
     log("YoumiAd::showSpotAd");
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) //判断当前是否为Android平台
 
     // 定义JNI函数信息结构体
-    JniMethodInfo showBannerAd;
+    JniMethodInfo showSpotAd;
 
     /**
      * @param 第一个参数：JNI函数信息结构体
@@ -21,13 +21,13 @@ void YoumiAd::showBannerAd()
      * @param 第四个参数：该JAVA方法所需要传入的值，格式为"(JAVA方法中需要传入的值)c++中本函数返回值"，Demo中，showSpotAd的JAVA方法不需要传入值，而YoumiAd::showSpotAd()返回值为void，所以这里写 "()V"
      * @return 返回bool值表示是否找到静态函数
      */
-    bool isHave = JniHelper::getStaticMethodInfo(showBannerAd, "org/cocos2dx/cpp/AppActivity", "showBannerAd", "()V");
-    log("YoumiAd::showBannerAd: android");
+    bool isHave = JniHelper::getStaticMethodInfo(showSpotAd, "org/cocos2dx/cpp/AppActivity", "showSpotAd", "()V");
+    log("YoumiAd::showSpotAd: android");
     if (!isHave) {
-        log("jni:showBannerAd函数不存在");
+        log("jni:showSpotAd函数不存在");
     } else {
-        log("jni:showBannerAd函数存在");
-        showBannerAd.env->CallStaticVoidMethod(showBannerAd.classID, showBannerAd.methodID);
+        log("jni:showSpotAd函数存在");
+        showSpotAd.env->CallStaticVoidMethod(showSpotAd.classID, showSpotAd.methodID);
     }
 #endif
 }
@@ -35,20 +35,20 @@ void YoumiAd::showBannerAd()
 /**
  * 隐藏插屏广告（C++ 通过JNI 调用JAVA方法）
  */
-bool YoumiAd::hideBannerAd()
+bool YoumiAd::hideSpotAd()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) //判断当前是否为Android平台
 
-    JniMethodInfo hideBannerAd;
+    JniMethodInfo hideSpotAd;
 
-    bool isHave = JniHelper::getStaticMethodInfo(hideBannerAd, "com/youmi/android/cocos2dx/demo/MainActivity", "hideBannerAd", "()Z");
+    bool isHave = JniHelper::getStaticMethodInfo(hideSpotAd, "org/cocos2dx/cpp/AppActivity", "hideSpotAd", "()Z");
 
     if (!isHave) {
-        log("jni:hideBannerAd函数不存在");
+        log("jni:hideSpotAd函数不存在");
         return false;
     } else {
-        log("jni:hideBannerAd函数存在");
-        return hideBannerAd.env->CallStaticBooleanMethod(hideBannerAd.classID, hideBannerAd.methodID);
+        log("jni:hideSpotAd函数存在");
+        return hideSpotAd.env->CallStaticBooleanMethod(hideSpotAd.classID, hideSpotAd.methodID);
     }
 #endif
 }
@@ -62,7 +62,7 @@ void YoumiAd::exitApp()
 
     JniMethodInfo exitApp;
 
-    bool isHave = JniHelper::getStaticMethodInfo(exitApp, "com/youmi/android/cocos2dx/demo/MainActivity", "exitApp", "()V");
+    bool isHave = JniHelper::getStaticMethodInfo(exitApp, "org/cocos2dx/cpp/AppActivity", "exitApp", "()V");
 
     if (!isHave) {
         log("jni:exitApp函数不存在");

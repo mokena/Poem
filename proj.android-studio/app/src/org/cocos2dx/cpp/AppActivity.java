@@ -37,17 +37,19 @@ import android.widget.Toast;
 import net.youmi.android.AdManager;
 import net.youmi.android.normal.banner.BannerManager;
 import net.youmi.android.normal.banner.BannerViewListener;
+import net.youmi.android.normal.common.ErrorCode;
+import net.youmi.android.normal.spot.SpotListener;
+import net.youmi.android.normal.spot.SpotManager;
+
 import org.cocos2dx.lib.Cocos2dxActivity;
 
 public class AppActivity extends Cocos2dxActivity {
 
     private static Handler sHandler;
 
-    private View mBannerView;
+    private final static int SHOW_SPOT_AD = 100;
 
-    private final static int SHOW_BANNER_AD = 103;
-
-    private final static int HIDE_BANNER_AD = 104;
+    private final static int HIDE_SPOT_AD = 101;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,64 +63,17 @@ public class AppActivity extends Cocos2dxActivity {
         AdManager.getInstance(this).init("c845d0d4fa076f16", "ae816683da281fa6", true, true);
     }
 
-    /**
-     * 展示广告条
-     */
-    private void internalShowBannerAd() {
-        if (mBannerView == null) {
-            // 获取广告条
-            mBannerView = BannerManager.getInstance(this)
-                    .getBannerView(this, new BannerViewListener() {
-                        @Override
-                        public void onRequestSuccess() {
-                            showToastOnUiThread("请求广告条成功", Toast.LENGTH_SHORT);
-                        }
-
-                        @Override
-                        public void onSwitchBanner() {
-                            showToastOnUiThread("广告条切换", Toast.LENGTH_SHORT);
-                        }
-
-                        @Override
-                        public void onRequestFailed() {
-                            showToastOnUiThread("请求广告条失败", Toast.LENGTH_LONG);
-                        }
-                    });
-            // 使用WindowManager来展示广告条
-            WindowManager mWindowManager = (WindowManager) this.getSystemService(Context.WINDOW_SERVICE);
-            WindowManager.LayoutParams mWmParams = new WindowManager.LayoutParams();
-            mWmParams.flags = WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL | WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE;
-            mWmParams.width = WindowManager.LayoutParams.WRAP_CONTENT;
-            mWmParams.height = WindowManager.LayoutParams.WRAP_CONTENT;
-            mWmParams.type = WindowManager.LayoutParams.TYPE_APPLICATION_ATTACHED_DIALOG;
-            mWmParams.alpha = 1.0F;
-            mWmParams.format = 1;
-            mWmParams.gravity = Gravity.BOTTOM | Gravity.RIGHT; // 这里示例为：在右下角展示广告条条
-            mWindowManager.addView(mBannerView, mWmParams);
-        }
-    }
-
-    /**
-     * 隐藏广告条
-     */
-    private void internalHideBannerAd() {
-        if (mBannerView != null) {
-            ((WindowManager) this.getSystemService(Context.WINDOW_SERVICE)).removeView(mBannerView);
-            mBannerView = null;
-        }
-    }
-
     private void initHandler() {
         sHandler = new Handler() {
             @Override
             public void handleMessage(Message msg) {
                 super.handleMessage(msg);
                 switch (msg.what) {
-                    case SHOW_BANNER_AD:
-                        internalShowBannerAd();
+                    case SHOW_SPOT_AD:
+                        internalShowSpotAd();
                         break;
-                    case HIDE_BANNER_AD:
-                        internalHideBannerAd();
+                    case HIDE_SPOT_AD:
+                        internalHideSpotAd();
                         break;
                     default:
                         break;
@@ -128,33 +83,113 @@ public class AppActivity extends Cocos2dxActivity {
     }
 
     /**
-     * 展示广告条
+     * 设置插屏广告
      */
-    public static void showBannerAd() {
-        sendMsgToHandler(SHOW_BANNER_AD);
+    private void setupSpotAd() {
+        // 设置插屏图片类型，默认竖图
+        // 横图
+        //SpotManager.getInstance(this).setImageType(SpotManager.IMAGE_TYPE_HORIZONTAL);
+        // 竖图
+        SpotManager.getInstance(this).setImageType(SpotManager.IMAGE_TYPE_VERTICAL);
+        //
+        // 设置动画类型，默认高级动画
+        // 无动画
+        // SpotManager.getInstance(this).setAnimationType(SpotManager.ANIMATION_TYPE_NONE);
+        // 简单动画
+        // SpotManager.getInstance(this).setAnimationType(SpotManager.ANIMATION_TYPE_SIMPLE);
+        // 高级动画
+        SpotManager.getInstance(this).setAnimationType(SpotManager.ANIMATION_TYPE_ADVANCED);
     }
 
     /**
-     * 隐藏广告条
+     * 展示插屏广告
      */
-    public static void hideBannerAd() {
-        sendMsgToHandler(HIDE_BANNER_AD);
+    private void internalShowSpotAd() {
+        SpotManager.getInstance(getContext()).showSpot(getContext(), new SpotListener() {
+            @Override
+            public void onShowSuccess() {
+                showToastOnUiThread("插屏展示成功", Toast.LENGTH_SHORT);
+            }
+
+            @Override
+            public void onShowFailed(int errorCode) {
+                switch (errorCode) {
+                    case ErrorCode.NON_NETWORK:
+                        showToastOnUiThread("插屏展示失败 - 网络异常", Toast.LENGTH_LONG);
+                        break;
+                    case ErrorCode.NON_AD:
+                        showToastOnUiThread("插屏展示失败 - 暂无插屏广告", Toast.LENGTH_LONG);
+                        break;
+                    case ErrorCode.RESOURCE_NOT_READY:
+                        showToastOnUiThread("插屏展示失败 - 插屏资源还没准备好", Toast.LENGTH_LONG);
+                        break;
+                    case ErrorCode.SHOW_INTERVAL_LIMITED:
+                        showToastOnUiThread("插屏展示失败 - 请勿频繁展示", Toast.LENGTH_LONG);
+                        break;
+                    case ErrorCode.WIDGET_NOT_IN_VISIBILITY_STATE:
+                        showToastOnUiThread("插屏展示失败 - 请设置插屏为可见状态", Toast.LENGTH_LONG);
+                        break;
+                    default:
+                        showToastOnUiThread("插屏展示失败 - 请稍后再试", Toast.LENGTH_LONG);
+                        break;
+                }
+            }
+
+            @Override
+            public void onSpotClosed() {
+                showToastOnUiThread("插屏被关闭", Toast.LENGTH_SHORT);
+            }
+
+            @Override
+            public void onSpotClicked(boolean isWebPage) {
+                showToastOnUiThread("插屏被点击", Toast.LENGTH_SHORT);
+            }
+        });
+    }
+
+    /**
+     * 隐藏插屏广告
+     */
+    private void internalHideSpotAd() {
+        SpotManager.getInstance(this).hideSpot();
+    }
+
+    /**
+     * 展示插屏广告（这个方法在后续步骤中将会被C++通过JNI调用）
+     */
+    public static void showSpotAd() {
+        Message msg = sHandler.obtainMessage();
+        msg.what = SHOW_SPOT_AD;
+        msg.sendToTarget();
+    }
+
+    /**
+     * 隐藏插屏广告（这个方法在后续步骤中将会被C++通过JNI调用）
+     *
+     * @return 当插屏正在展示，而且隐藏插屏成功，返回 {@code true}；插屏没有展示，则返回 {@code false}
+     */
+    public static boolean hideSpotAd() {
+        if (SpotManager.getInstance(getContext()).isSpotShowing()) {
+            Message msg = sHandler.obtainMessage();
+            msg.what = HIDE_SPOT_AD;
+            msg.sendToTarget();
+            return true;
+        }
+        return false;
     }
 
     /**
      * 退出应用
      */
     public static void exitApp() {
+        // 退出应用时调用，用于释放资源
         // 如果无法保证应用主界面的 onDestroy() 方法被执行到，请移动以下接口到应用的退出逻辑里面调用
 
-        // 展示广告条窗口的 onDestroy() 回调方法中调用
-        BannerManager.getInstance(getContext()).onDestroy();
-    }
+        // 插屏广告
+        SpotManager.getInstance(getContext()).onDestroy();
 
-    private synchronized static void sendMsgToHandler(int type) {
-        Message msg = sHandler.obtainMessage();
-        msg.what = type;
-        msg.sendToTarget();
+        // 插屏广告（包括普通插屏广告、轮播插屏广告、原生插屏广告）
+        SpotManager.getInstance(getContext()).onAppExit();
     }
 
     public static void showToastOnUiThread(final String str, final int duration) {
@@ -169,5 +204,20 @@ public class AppActivity extends Cocos2dxActivity {
                 }
             });
         }
+    }
+
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        // 插屏广告
+        SpotManager.getInstance(this).onPause();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        // 插屏广告
+        SpotManager.getInstance(this).onStop();
     }
 }
