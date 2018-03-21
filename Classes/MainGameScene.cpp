@@ -32,12 +32,13 @@ bool MainGame::init()
 	srand(time(0));
 	selectedCount = 0;
 
+	// initialize level
+	level = UserDefault::getInstance()->getIntegerForKey(CUR_LEVEL);
+	level = (level == 0) ? 1 : level;
+	log("init level is %d", level);
+
 	// initial the UI layout
 	initUI();
-
-    // initialize level
-    level = UserDefault::getInstance()->getIntegerForKey(CUR_LEVEL);
-    level = (level == 0) ? 1 : level;
 
 	auto keyboardListener = EventListenerKeyboard::create();
 	keyboardListener->onKeyReleased = CC_CALLBACK_2(MainGame::onKeyReleased, this);
@@ -339,6 +340,7 @@ void MainGame::levelClear()
 	}
 
 	// write current level to storage
+	log("++ level is %d", level);
 	UserDefault::getInstance()->setIntegerForKey(CUR_LEVEL, level);
 }
 

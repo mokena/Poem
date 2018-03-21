@@ -60,7 +60,7 @@ public class AppActivity extends Cocos2dxActivity {
 
     private void initSDK() {
         // 初始化接口，应用启动的时候调用，参数：appId, appSecret, 是否开启调试模式, 是否开启有米日志
-        AdManager.getInstance(this).init("c845d0d4fa076f16", "ae816683da281fa6", true, true);
+        AdManager.getInstance(this).init("c845d0d4fa076f16", "ae816683da281fa6", true, false);
     }
 
     private void initHandler() {
