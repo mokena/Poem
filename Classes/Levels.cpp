@@ -29,8 +29,25 @@ bool Levels::init()
         return false;
     }
 
-
+    initUI();
 
 
     return true;
+}
+
+void Levels::initUI() {
+    const int gap = 5;
+    auto bg = Sprite::create("bg.png");
+    bg->setAnchorPoint(Vec2(0, 0));
+    addChild(bg);
+
+    auto visibleSize = Director::getInstance()->getVisibleSize();
+    Vec2 origin = Director::getInstance()->getVisibleOrigin();
+    auto designSize = Director::getInstance()->getWinSize();
+
+    auto level = Sprite::create("level.png");
+    auto levelSize = level->getContentSize();
+    level->setPosition(visibleSize.width/2, levelSize.height/2 + gap);
+    addChild(level);
+
 }
