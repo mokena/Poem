@@ -333,8 +333,8 @@ void MainGame::levelClear()
 	initLevel();
 
 	// show ads
-	int randN = CCRANDOM_0_1()*3 + 4;
-	if(level % randN == 0)
+	//int randN = CCRANDOM_0_1()*3 + 4;
+	//if(level % randN == 0)
 	{
 		YoumiAd::showSpotAd();
 	}
