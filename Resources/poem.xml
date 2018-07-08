@@ -1,0 +1,228 @@
+﻿<dict>  
+	  <key>app</key>
+	  <string>乱斗诗</string>
+		<key>need_note</key>
+		<string>需要提示吗？</string>
+	
+		<key>poem1</key>
+		<string>八阵图</string>
+		<key>author1</key>
+		<string>【作者】杜甫</string>
+		<key>dynasty1</key>
+		<string>【朝代】唐</string>
+    <key>level1</key>  
+    <string>功盖三分国名成八阵图江流石不转遗恨失吞吴</string>  
+    <key>note1</key> 
+    <string>三国鼎立你建立了盖世功绩，创八阵图你成就了永久声名。江水东流推不转你布阵石头，千古遗恨你灭吴失策功未就。</string>
+    
+    <key>poem2</key>
+		<string>行宫</string>
+		<key>author2</key>
+		<string>【作者】元稹</string>
+		<key>dynasty2</key>
+		<string>【朝代】唐</string>
+    <key>level2</key>  
+    <string>寥落古行宫宫花寂寞红白头宫女在闲坐说玄宗</string>  
+    <key>note2</key> 
+    <string>早已空虚冷寞的古行宫，零落宫花依然开行艳红。有几个满头白发的宫女，闲坐谈论当年的唐玄宗。</string>
+    
+    <key>poem3</key>
+		<string>新嫁娘词</string>
+		<key>author3</key>
+		<string>【作者】王建</string>
+		<key>dynasty3</key>
+		<string>【朝代】唐</string>
+    <key>level3</key>  
+    <string>三日入厨下洗手作羹汤未谙姑食性先遣小姑尝</string>  
+    <key>note3</key> 
+    <string>新婚三天来到厨房，洗手亲自来作羹汤。不知婆婆什么口味，做好先让小姑品尝。</string>
+    
+    <key>poem4</key>
+		<string>杂诗三首·其二</string>
+		<key>author4</key>
+		<string>【作者】王维</string>
+		<key>dynasty4</key>
+		<string>【朝代】唐</string>
+    <key>level4</key>  
+    <string>君自故乡来应知故乡事来日绮窗前寒梅著花未</string>  
+    <key>note4</key> 
+    <string>您是刚从我们家乡来的，一定了解家乡的人情世态。请问您来的时候我家雕画花纹的窗户前，那一株腊梅花开了没有？</string>
+    
+    <key>poem5</key>
+		<string>竹里馆</string>
+		<key>author5</key>
+		<string>【作者】王维</string>
+		<key>dynasty5</key>
+		<string>【朝代】唐</string>
+    <key>level5</key>  
+    <string>独坐幽篁里弹琴复长啸深林人不知明月来相照</string>  
+    <key>note5</key> 
+    <string>独自闲坐幽静竹林，时而弹琴时而长啸。密林之中何人知晓我在这里？只有一轮明月静静与我相伴。</string>
+    
+    <key>poem6</key>
+		<string>山中送别</string>
+		<key>author6</key>
+		<string>【作者】王维</string>
+		<key>dynasty6</key>
+		<string>【朝代】唐</string>
+    <key>level6</key>  
+    <string>山中相送罢日暮掩柴扉春草明年绿王孙归不归</string>  
+    <key>note6</key> 
+    <string>在深山中送走了好友，夕阳落下把柴门半掩。春草到明年催生新绿，朋友啊你能不能回还？ </string>
+    
+    <key>poem7</key>
+		<string>问刘十九</string>
+		<key>author7</key>
+		<string>【作者】白居易</string>
+		<key>dynasty7</key>
+		<string>【朝代】唐</string>
+    <key>level7</key>  
+    <string>绿蚁新醅酒红泥小火炉晚来天欲雪能饮一杯无</string>  
+    <key>note7</key> 
+    <string>新酿的米酒，色绿香浓；小小红泥炉，烧得殷红。天快黑了，大雪将要来。能否共饮一杯？朋友！</string>
+    
+    <key>poem8</key>
+		<string>哥舒歌</string>
+		<key>author8</key>
+		<string>【作者】西鄙人</string>
+		<key>dynasty8</key>
+		<string>【朝代】唐</string>
+    <key>level8</key>  
+    <string>北斗七星高哥舒夜带刀至今窥牧马不敢过临洮</string>  
+    <key>note8</key> 
+    <string>黑夜里北斗七星挂得高高，哥舒翰勇猛守边夜带宝刀。吐蕃族至今牧马只敢远望，他们再不敢南来越过临洮。</string>
+    
+    <key>poem9</key>
+		<string>怨情</string>
+		<key>author9</key>
+		<string>【作者】李白</string>
+		<key>dynasty9</key>
+		<string>【朝代】唐</string>
+    <key>level9</key>  
+    <string>美人卷珠帘深坐颦蛾眉但见泪痕湿不知心恨谁</string>  
+    <key>note9</key> 
+    <string>美人儿卷起珠帘一直等待，一直坐着把双眉紧紧锁闭。只看见她泪痕湿满了两腮，不知道她是恨人还是恨己。</string>
+
+		<key>poem10</key>
+		<string>乐游原</string>
+		<key>author10</key>
+		<string>【作者】李商隐</string>
+		<key>dynasty9</key>
+		<string>【朝代】唐</string>
+    <key>level10</key>  
+    <string>向晚意不适驱车登古原夕阳无限好只是近黄昏</string>  
+    <key>note10</key> 
+    <string>傍晚时心情不快，驾着车登上古原。夕阳啊无限美好，只不过已是黄昏。</string>
+
+		<key>poem11</key>
+		<string>听筝</string>
+		<key>author11</key>
+		<string>【作者】李端</string>
+		<key>dynasty11</key>
+		<string>【朝代】唐</string>
+    <key>level9</key>  
+    <string>鸣筝金粟柱素手玉房前欲得周郎顾时时误拂弦</string>  
+    <key>note11</key> 
+    <string>金粟轴的古筝发出优美的声音，那素手拨筝的美人坐在玉房前。想尽了办法为博取周郎的青睐，你看她故意地时时拨错了琴弦。</string>
+
+		<key>poem12</key>
+		<string>渡汉江</string>
+		<key>author12</key>
+		<string>【作者】宋之问</string>
+		<key>dynasty12</key>
+		<string>【朝代】唐</string>
+    <key>level12</key>  
+    <string>岭外音书断经冬复历春近乡情更怯不敢问来人</string>  
+    <key>note12</key> 
+    <string>流放岭南与亲人断绝了音信，熬过了冬天又经历一个新春。越走近故乡心里就越是胆怯，不敢打听从家那边过来的人。</string>
+
+		<key>poem13</key>
+		<string>宿建德江</string>
+		<key>author13</key>
+		<string>【作者】孟浩然</string>
+		<key>dynasty13</key>
+		<string>【朝代】唐</string>
+    <key>level13</key>  
+    <string>移舟泊烟渚日暮客愁新野旷天低树江清月近人</string>  
+    <key>note13</key> 
+    <string>把小船停靠在烟雾迷蒙的小洲，日暮时分新愁又涌上客子心头。旷野无边无际远天比树还低沉，江水清清明月来和人相亲相近。</string>
+    
+		<key>poem14</key>
+		<string>春晓</string>
+		<key>author14</key>
+		<string>【作者】孟浩然</string>
+		<key>dynasty14</key>
+		<string>【朝代】唐</string>
+    <key>level14</key>  
+    <string>春眠不觉晓处处闻啼鸟夜来风雨声花落知多少</string>  
+    <key>note14</key> 
+    <string>春日里贪睡不知不觉天已破晓，搅乱我酣眠的是那啁啾的小鸟。昨天夜里风声雨声一直不断，那娇美的春花不知被吹落了多少？</string>    
+    
+    <key>poem15</key>
+		<string>春怨 / 伊州歌</string>
+		<key>author15</key>
+		<string>【作者】金昌绪</string>
+		<key>dynasty15</key>
+		<string>【朝代】唐</string>
+    <key>level15</key>  
+    <string>打起黄莺儿莫教枝上啼啼时惊妾梦不得到辽西</string>  
+    <key>note15</key> 
+    <string>我敲打树枝，赶走树上的黄莺，不让它在树上乱叫。它清脆的叫声，惊醒了我的梦，害得我在梦中不能赶到辽西，与戍守边关的亲人相见。</string>
+    
+    <key>poem16</key>
+		<string>江雪</string>
+		<key>author16</key>
+		<string>【作者】柳宗元</string>
+		<key>dynasty16</key>
+		<string>【朝代】唐</string>
+    <key>level16</key>  
+    <string>千山鸟飞绝万径人踪灭孤舟蓑笠翁独钓寒江雪</string>  
+    <key>note16</key> 
+    <string>所有的山，飞鸟全都断绝；所有的路，不见人影踪迹。江上孤舟，渔翁披蓑戴笠；独自垂钓，不怕冰雪侵袭。</string>
+    
+    <key>poem17</key>
+		<string>秋夜寄邱员外 / 秋夜寄丘二十二员外</string>
+		<key>author17</key>
+		<string>【作者】韦应物</string>
+		<key>dynasty17</key>
+		<string>【朝代】唐</string>
+    <key>level17</key>  
+    <string>怀君属秋夜散步咏凉天空山松子落幽人应未眠</string>  
+    <key>note17</key> 
+    <string>怀念你竟在这深秋的夜晚，散步咏叹多么寒凉的霜天。想此刻空山中正掉落松子，幽居的友人一定还未安眠。</string>
+    
+		<key>poem18</key>
+		<string>终南望余雪</string>
+		<key>author18</key>
+		<string>【作者】祖咏</string>
+		<key>dynasty18</key>
+		<string>【朝代】唐</string>
+    <key>level18</key>  
+    <string>终南阴岭秀积雪浮云端林表明霁色城中增暮寒</string>  
+    <key>note18</key> 
+    <string>遥望终南，北山秀丽，皑皑白雪，若浮云间。雪后初晴，林梢之间闪烁着夕阳余晖，晚时分，长安城内又添了几分积寒。</string>
+
+		<key>poem19</key>
+		<string>宫词·故国三千里</string>
+		<key>author19</key>
+		<string>【作者】张祜</string>
+		<key>dynasty19</key>
+		<string>【朝代】唐</string>
+    <key>level19</key>  
+    <string>故国三千里深宫二十年一声何满子双泪落君前</string>  
+    <key>note19</key> 
+    <string>故乡和亲人远在千里之外，我已被幽闭在这深宫里二十年了，听一声曲子《何满子》，忍不住掉下眼泪。</string>
+    
+    <key>poem20</key>
+		<string>寻隐者不遇 / 孙革访羊尊师诗</string>
+		<key>author20</key>
+		<string>【作者】贾岛</string>
+		<key>dynasty20</key>
+		<string>【朝代】唐</string>
+    <key>level20</key>  
+    <string>松下问童子言师采药去只在此山中云深不知处</string>  
+    <key>note20</key> 
+    <string>苍松下，我询问了年少的学童；他说，师傅已经采药去了山中。他还对我说，就在这座大山里，可山中云雾缭绕，不知他行踪。</string>
+    
+
+</dict>  
