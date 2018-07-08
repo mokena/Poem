@@ -451,9 +451,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="__local_aars__:D.\workspace\Poem\cocos2d\cocos\platform\android\java\libs\android-async-http-1.4.9.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="__local_aars__:D.\workspace\Poem\cocos2d\cocos\platform\android\java\libs\EngineDataManager.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="__local_aars__:D.\workspace\Poem\proj.android-studio\app\jniLibs\YoumiSdk_v7.0.1_2017-01-06.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="__local_aars__:D.\workspace\Poem\cocos2d\cocos\platform\android\java\libs\httpclient-4.4.1.1.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="__local_aars__:D.\workspace\Poem\proj.android-studio\app\jniLibs\android-support-v4.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="__local_aars__:D.\workspace\Poem\cocos2d\cocos\platform\android\java\libs\com.android.vending.expansion.zipfile.jar:unspecified@jar" level="project" />
     <orderEntry type="module" module-name="libcocos2dx" />
   </component>

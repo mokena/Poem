@@ -1,6 +1,5 @@
 ﻿#include "MainGameScene.h"
 #include "SimpleAudioEngine.h"
-#include "YoumiAd.h"
 
 static const char* CUR_LEVEL="cur_level";
 
@@ -332,13 +331,6 @@ void MainGame::levelClear()
 	level++;
 	initLevel();
 
-	// show ads
-	//int randN = CCRANDOM_0_1()*3 + 4;
-	//if(level % randN == 0)
-	{
-		YoumiAd::showSpotAd();
-	}
-
 	// write current level to storage
 	log("++ level is %d", level);
 	UserDefault::getInstance()->setIntegerForKey(CUR_LEVEL, level);
@@ -359,8 +351,6 @@ void MainGame::onKeyReleased(EventKeyboard::KeyCode keyCode, Event * event)
 
 void MainGame::menuCloseCallback(Ref* pSender)
 {
-    // exit ads
-	YoumiAd::exitApp();
 
 	//Close the cocos2d-x game scene and quit the application
     Director::getInstance()->end();
