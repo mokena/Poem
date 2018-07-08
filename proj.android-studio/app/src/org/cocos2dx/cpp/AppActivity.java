@@ -24,13 +24,15 @@ THE SOFTWARE.
 package org.cocos2dx.cpp;
 
 import android.os.Bundle;
-
 import org.cocos2dx.lib.Cocos2dxActivity;
+
+import static com.ytb.logic.CMain.*;
 
 public class AppActivity extends Cocos2dxActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setAppId(this, "hmGob474ygq9PYXnUp", "406e6aaf12e478b4abb5a71ffaf03aa7");
     }
 }

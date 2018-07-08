@@ -97,5 +97,5 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile project(':libcocos2dx')
-
+    implementation files('jniLibs/inapp_1.3.0_v6001__07030035.jar')
 }
