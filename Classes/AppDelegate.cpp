@@ -1,5 +1,5 @@
 #include "AppDelegate.h"
-#include "MainGameScene.h"
+#include "WelcomeScene.h"
 
 USING_NS_CC;
 
@@ -75,7 +75,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     register_all_packages();
 
     // create a scene. it's an autorelease object
-    auto scene = MainGame::createScene();
+    auto scene = Welcome::createScene();
 
     // run
     director->runWithScene(scene);
