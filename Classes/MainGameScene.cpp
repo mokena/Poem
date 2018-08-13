@@ -64,20 +64,6 @@ void MainGame::initUI()
 	bg->setAnchorPoint(Vec2(0, 0));
 	addChild(bg);
 
-	//// add a "close" icon to exit the progress. it's an autorelease object
-	//auto closeItem = MenuItemImage::create(
-	//	"CloseNormal.png",
-	//	"CloseSelected.png",
-	//	CC_CALLBACK_1(MainGame::menuCloseCallback, this));
-
-	//closeItem->setPosition(Vec2(origin.x + visibleSize.width - closeItem->getContentSize().width / 2,
-	//	origin.y + closeItem->getContentSize().height / 2));
-
-	//// create menu, it's an autorelease object
-	//auto menu = Menu::create(closeItem, NULL);
-	//menu->setPosition(Vec2::ZERO);
-	//this->addChild(menu, 1);
-
 	// charactors area
 	charactorsArea = Sprite::create("charactorArea.png");
 	charactorsArea->setAnchorPoint(Vec2(0.5, 0.5));
@@ -86,12 +72,18 @@ void MainGame::initUI()
 	addChild(charactorsArea);
 
 	// info area
+	// level
+	auto levelBg = Sprite::create("levelHint.png");
+	levelBg->setPosition(Vec2(origin.x + levelBg->getContentSize().width/2 + 10,
+							  origin.y + visibleSize.height - levelBg->getContentSize().height));
+	addChild(levelBg);
+
 	// title
 	chnStrings = Dictionary::createWithContentsOfFile("poem.xml");
 	const char* dstr = ((String*)chnStrings->objectForKey("app"))->getCString();
 	title = Label::create(dstr, "Arial", 40);
-	title->setPosition(Vec2(origin.x + visibleSize.width / 2, 
-		origin.y + visibleSize.height - title->getContentSize().height));
+	title->setPosition(Vec2(origin.x + visibleSize.width / 2,
+                            levelBg->getPositionY() - levelBg->getContentSize().height*4/3 - title->getContentSize().height));
 	addChild(title);
 
 	// author
