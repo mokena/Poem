@@ -77,6 +77,13 @@ void MainGame::initUI()
 	levelBg->setPosition(Vec2(origin.x + levelBg->getContentSize().width/2 + 10,
 							  origin.y + visibleSize.height - levelBg->getContentSize().height));
 	addChild(levelBg);
+    levelLbl = Label::create();
+    const std::string levelLblStr = "诗";
+    levelLbl->setString(levelLblStr);
+    levelLbl->setSystemFontSize(25);
+    levelLbl->setPosition(levelBg->getPositionX(), levelBg->getPositionY());
+    addChild(levelLbl);
+
 
 	// title
 	chnStrings = Dictionary::createWithContentsOfFile("poem.xml");
@@ -141,6 +148,11 @@ void MainGame::initLevel()
     log("level is %d", level);
 
 	// info area
+    // level
+    std::string levelNo = convertNoToChn(level);
+    const std::string levelNoStr = "诗 " + levelNo;
+    levelLbl->setString(levelNoStr);
+
 	// title
 	std::string ts = StringUtils::format("poem%d", level);
 	const char* titstr = ts.c_str();
@@ -380,4 +392,48 @@ bool MainGame::isCorrectPoem(std::string pick, std::string src)
 	}
 
 	return false;
+}
+
+std::string MainGame::convertNoToChn(int no) {
+    std::string chn = "";
+    do{
+        switch(no%10) {
+            case 0:
+                chn = "零" + chn;
+                break;
+            case 1:
+                chn = "壹" + chn;
+                break;
+            case 2:
+                chn = "貳" + chn;
+                break;
+            case 3:
+                chn = "叁" + chn;
+                break;
+            case 4:
+                chn = "肆" + chn;
+                break;
+            case 5:
+                chn = "伍" + chn;
+                break;
+            case 6:
+                chn = "陸" + chn;
+                break;
+            case 7:
+                chn = "柒" + chn;
+                break;
+            case 8:
+                chn = "捌" + chn;
+                break;
+            case 9:
+                chn = "玖" + chn;
+                break;
+            default:
+                break;
+        }
+
+        no = no / 10;
+    }
+    while(no>0);
+    return chn;
 }

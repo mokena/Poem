@@ -24,6 +24,7 @@ private:
 	
 	ProgressTimer* progressTimer; // progress of the whole poem been selected
 	Label* noteLbl; // hint to user
+    Label* levelLbl; // level string
 	Label* title; // title of the poem
 	Label* author; // author of the poem
 	Label* dynasty; // dynasty of the poem
@@ -57,6 +58,9 @@ public:
     void menuCloseCallback(cocos2d::Ref* pSender);
 
 	bool isCorrectPoem(std::string pick, std::string src);
+
+    // convert level no. to ancient chinese
+    std::string convertNoToChn(int no);
     
     // implement the "static create()" method manually
     CREATE_FUNC(MainGame);

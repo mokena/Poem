@@ -450,11 +450,11 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 22 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="__local_aars__:H.\CocosProject\Poem\proj.android-studio\app\jniLibs\inapp_1.3.0_v6001__07030035.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="__local_aars__:H.\CocosProject\Poem\cocos2d\cocos\platform\android\java\libs\EngineDataManager.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="__local_aars__:H.\CocosProject\Poem\cocos2d\cocos\platform\android\java\libs\android-async-http-1.4.9.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="__local_aars__:H.\CocosProject\Poem\cocos2d\cocos\platform\android\java\libs\httpclient-4.4.1.1.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="__local_aars__:H.\CocosProject\Poem\cocos2d\cocos\platform\android\java\libs\com.android.vending.expansion.zipfile.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="__local_aars__:D.\workspace\Poem\cocos2d\cocos\platform\android\java\libs\android-async-http-1.4.9.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="__local_aars__:D.\workspace\Poem\cocos2d\cocos\platform\android\java\libs\EngineDataManager.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="__local_aars__:D.\workspace\Poem\cocos2d\cocos\platform\android\java\libs\httpclient-4.4.1.1.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="__local_aars__:D.\workspace\Poem\proj.android-studio\app\jniLibs\inapp_1.3.0_v6001__07030035.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="__local_aars__:D.\workspace\Poem\cocos2d\cocos\platform\android\java\libs\com.android.vending.expansion.zipfile.jar:unspecified@jar" level="project" />
     <orderEntry type="module" module-name="libcocos2dx" />
   </component>
 </module>
