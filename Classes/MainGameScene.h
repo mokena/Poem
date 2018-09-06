@@ -24,6 +24,7 @@ private:
 	
 	ProgressTimer* progressTimer; // progress of the whole poem been selected
 	Label* noteLbl; // hint to user
+    Sprite* hintArea; // hint area where user need
     Label* levelLbl; // level string
 	Label* title; // title of the poem
 	Label* author; // author of the poem

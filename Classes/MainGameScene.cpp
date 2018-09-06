@@ -90,7 +90,7 @@ void MainGame::initUI()
 	const char* dstr = ((String*)chnStrings->objectForKey("app"))->getCString();
 	title = Label::create(dstr, "Arial", 40);
 	title->setPosition(Vec2(origin.x + visibleSize.width / 2,
-                            levelBg->getPositionY() - levelBg->getContentSize().height*4/3 - title->getContentSize().height));
+                            levelBg->getPositionY() - levelBg->getContentSize().height - title->getContentSize().height));
 	addChild(title);
 
 	// author

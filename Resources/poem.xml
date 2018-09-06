@@ -120,7 +120,7 @@
 		<string>【作者】李端</string>
 		<key>dynasty11</key>
 		<string>【朝代】唐</string>
-    <key>level9</key>  
+    <key>level11</key>  
     <string>鸣筝金粟柱素手玉房前欲得周郎顾时时误拂弦</string>  
     <key>note11</key> 
     <string>金粟轴的古筝发出优美的声音，那素手拨筝的美人坐在玉房前。想尽了办法为博取周郎的青睐，你看她故意地时时拨错了琴弦。</string>
@@ -214,7 +214,7 @@
     <string>故乡和亲人远在千里之外，我已被幽闭在这深宫里二十年了，听一声曲子《何满子》，忍不住掉下眼泪。</string>
     
     <key>poem20</key>
-		<string>寻隐者不遇 / 孙革访羊尊师诗</string>
+		<string>寻隐者不遇</string>
 		<key>author20</key>
 		<string>【作者】贾岛</string>
 		<key>dynasty20</key>
@@ -224,5 +224,60 @@
     <key>note20</key> 
     <string>苍松下，我询问了年少的学童；他说，师傅已经采药去了山中。他还对我说，就在这座大山里，可山中云雾缭绕，不知他行踪。</string>
     
-
+    <key>poem21</key>
+		<string>送崔九</string>
+		<key>author21</key>
+		<string>【作者】裴迪</string>
+		<key>dynasty21</key>
+		<string>【朝代】唐</string>
+    <key>level21</key>  
+    <string>归山深浅去须尽丘壑美莫学武陵人暂游桃源里</string>  
+    <key>note21</key> 
+    <string>你若要归山无论深浅都要去看看；山峦沟壑清净秀美要尽情地赏玩。千万别学陶渊明笔下那个武陵人，只在桃花源游了几天就匆匆出山。</string>
+    
+		<key>poem22</key>
+		<string>送灵澈上人</string>
+		<key>author22</key>
+		<string>【作者】刘长卿</string>
+		<key>dynasty22</key>
+		<string>【朝代】唐</string>
+    <key>level22</key>  
+    <string>苍苍竹林寺杳杳钟声晚荷笠带斜阳青山独归远</string>  
+    <key>note22</key> 
+    <string>青苍的竹林寺，近晚时传来深远的钟声。背着斗笠披着斜阳，独回青山渐行渐远。</string>
+    
+    <key>poem23</key>
+		<string>听弹琴</string>
+		<key>author23</key>
+		<string>【作者】刘长卿</string>
+		<key>dynasty23</key>
+		<string>【朝代】唐</string>
+    <key>level23</key>  
+    <string>泠泠七弦上静听松风寒古调虽自爱今人多不弹</string>  
+    <key>note23</key> 
+    <string>七弦琴奏出清凉的曲调悠扬起伏，细细倾听就像那滚滚的松涛声。我虽然很喜爱这首古时的曲调，但在今天人们大多已不去弹奏了。</string>
+    
+    <key>poem24</key>
+		<string>送上人</string>
+		<key>author24</key>
+		<string>【作者】刘长卿</string>
+		<key>dynasty24</key>
+		<string>【朝代】唐</string>
+    <key>level24</key>  
+    <string>孤云将野鹤岂向人间住莫买沃洲山时人已知处</string>  
+    <key>note24</key> 
+    <string>你是行僧象孤云和野鹤，怎能在人世间栖居住宿？要归隐请别买沃洲名山，那里是世人早知的去处。</string>
+    
+    <key>poem25</key>
+		<string>玉台体</string>
+		<key>author25</key>
+		<string>【作者】权德舆</string>
+		<key>dynasty25</key>
+		<string>【朝代】唐</string>
+    <key>level25</key>  
+    <string>昨夜裙带解今朝蟢子飞铅华不可弃莫是藁砧归</string>  
+    <key>note25</key> 
+    <string>昨晚我裙带忽然松弛解开，早晨又看见蟢子双双飞来。要赶紧描眉擦粉梳妆打扮，莫非是我的丈夫快要回来。</string>
+    
+    
 </dict>  
