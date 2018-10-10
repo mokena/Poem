@@ -105,17 +105,16 @@ void MainGame::initUI()
 
 	// note area
 	const char* notestr = ((String*)chnStrings->objectForKey("need_note"))->getCString();
-	noteLbl = Label::create(notestr, "Arial", 30);
+	noteLbl = Label::create(notestr, "Arial", 25);
 	noteLbl->setPosition(Vec2(origin.x + visibleSize.width / 2, dynasty->getPositionY() - dynasty->getContentSize().height - noteLbl->getContentSize().height));
 	addChild(noteLbl);
 
 	// add touch listener
 	auto listener = EventListenerTouchOneByOne::create();
-	listener->onTouchBegan = CC_CALLBACK_2(MainGame::onTouchBeganCharactor, this);
+	listener->onTouchBegan = CC_CALLBACK_2(MainGame::onTouchBeganScreen, this);
 	auto dispatcher = Director::getInstance()->getEventDispatcher();
 	dispatcher->addEventListenerWithSceneGraphPriority(listener, this);
 
-	
 	// progress bar
 	auto progressBg = Sprite::create("progressBg.png");
 	progressBg->setScale(scaleFactor);
@@ -132,6 +131,19 @@ void MainGame::initUI()
 	progressTimer->setBarChangeRate(Vec2(1, 0));
 	
 	addChild(progressTimer);
+
+    // note hint area (invisible for default)
+    hintArea = Sprite::create("hintBg.png");
+    hintArea->setPosition(Vec2(origin.x + visibleSize.width / 2, origin.y + visibleSize.height / 2));
+    hintContent = Label::create(" ", "Arial", 30);
+    hintContent->setAnchorPoint(Vec2(0, 1));
+    hintContent->setPosition(hintArea->getContentSize().width/10, hintArea->getContentSize().height*9/10);
+    hintContent->setDimensions(hintArea->getContentSize().width*8/10, hintArea->getContentSize().height*8/10);
+	hintContent->setTextColor(Color4B(38, 21, 21, 255));
+    hintArea->addChild(hintContent);
+    hintArea->setVisible(false);
+    addChild(hintArea);
+    hintArea->_setLocalZOrder(1);
 
 	initLevel();
 }
@@ -178,6 +190,10 @@ void MainGame::initLevel()
 	dynasty->setString(dstr);
 
 	// note area
+	std::string ns = StringUtils::format("note%d", level);
+	const char* nostr = ns.c_str();
+	const char* nstr = ((String*)chnStrings->objectForKey(nostr))->getCString();
+	hintContent->setString(nstr);
 
 	// charactors
 	std::string levels = StringUtils::format("level%d", level);
@@ -203,9 +219,9 @@ void MainGame::initLevel()
 }
 
 /*
-	touch listener of charactors
+	touch listener of screen
 */
-bool MainGame::onTouchBeganCharactor(Touch * touch, Event * event)
+bool MainGame::onTouchBeganScreen(Touch *touch, Event *event)
 {
 	if (levelCleared) {
 		return false;
@@ -213,6 +229,21 @@ bool MainGame::onTouchBeganCharactor(Touch * touch, Event * event)
 
 	auto tpos = touch->getLocation();
 
+	// if hint area is visible, and touched hint area
+	auto hintAreaBox = hintArea->getBoundingBox();
+	if(hintAreaBox.containsPoint(tpos) && hintArea->isVisible()) {
+		hintArea->setVisible(false);
+		return false;
+	}
+
+	// if touched "need hint"
+	auto noteArea = noteLbl->getBoundingBox();
+	if(noteArea.containsPoint(tpos) && !hintArea->isVisible()) {
+		hintArea->setVisible(true);
+		return false;
+	}
+
+	// if touched charactors
 	for (int i = 0; i < disCharactors.size(); i++) {
 		auto charactor = disCharactors.at(i);
 		auto area = charactor->getBoundingBox();

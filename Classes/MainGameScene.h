@@ -25,6 +25,7 @@ private:
 	ProgressTimer* progressTimer; // progress of the whole poem been selected
 	Label* noteLbl; // hint to user
     Sprite* hintArea; // hint area where user need
+    Label* hintContent; // hint content with the understandable expression of the poem
     Label* levelLbl; // level string
 	Label* title; // title of the poem
 	Label* author; // author of the poem
@@ -41,7 +42,7 @@ public:
 
 	void initLevel();
 
-	bool onTouchBeganCharactor(Touch* touch, Event* event);
+	bool onTouchBeganScreen(Touch *touch, Event *event);
 
 	// disturb charactors randomly
 	void disturbCharactors(Vector<Charactor*> src, Vec2 origin, Size size);
